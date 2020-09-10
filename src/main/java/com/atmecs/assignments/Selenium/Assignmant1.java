@@ -11,7 +11,7 @@ public class Assignmant1
 {
 	WebDriver driver;
 	
-	@BeforeClass // will run after the @BeforeTest
+	@BeforeClass(alwaysRun=true) // will run after the @BeforeTest
 	public void greeting()
 	{
 		System.out.println("Welcome To Selenium\n");
@@ -70,7 +70,7 @@ public class Assignmant1
 	{
 		System.out.println("This will be execute after all the test\n");
 	}
-	@AfterTest // will execute after the @AfterClass()
+	@AfterTest(description="Going to close the browser") // will execute after the @AfterClass()
 	public void closingDriver() 
 	{
 		driver.close();
