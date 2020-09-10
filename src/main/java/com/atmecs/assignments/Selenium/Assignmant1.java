@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.*;
+import org.testng.asserts.*;
 
 public class Assignmant1 
 {
@@ -53,12 +54,24 @@ public class Assignmant1
 	}
 	
 	@AfterClass // will run after the @AfterMethod
-	public void warning()
+	public void greeting1()
 	{
 		System.out.println("Browser exited \n");
 	}
 	
-	@AfterTest // will execute after the @AfterClass
+
+	@BeforeSuite
+	public void beforeSuite()
+	{
+		System.out.println("This will be execute before all the test\n");
+	}
+	
+	@AfterSuite
+	public void afterSuite()
+	{
+		System.out.println("This will be execute after all the test\n");
+	}
+	@AfterTest // will execute after the @AfterClass()
 	public void closingDriver() 
 	{
 		driver.close();

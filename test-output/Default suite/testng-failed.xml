@@ -5,8 +5,14 @@
     <classes>
       <class name="com.atmecs.assignments.Selenium.Assignmant1">
         <methods>
+          <include name="infoBeforeLaunching"/>
+          <include name="closingDriver"/>
+          <include name="infoAfterLaunching"/>
+          <include name="validatingPage"/>
           <include name="settingAndLaunchingDriver"/>
           <include name="greeting"/>
+          <include name="warning"/>
+          <include name="message"/>
         </methods>
       </class> <!-- com.atmecs.assignments.Selenium.Assignmant1 -->
     </classes>

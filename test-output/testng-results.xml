@@ -2,51 +2,59 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-09-10T13:39:05 IST" name="Default suite" finished-at="2020-09-10T13:39:16 IST" duration-ms="10771">
+  <suite started-at="2020-09-10T18:29:12 IST" name="Default suite" finished-at="2020-09-10T18:29:22 IST" duration-ms="9962">
     <groups>
     </groups>
-    <test started-at="2020-09-10T13:39:05 IST" name="Default test" finished-at="2020-09-10T13:39:16 IST" duration-ms="10771">
+    <test started-at="2020-09-10T18:29:12 IST" name="Default test" finished-at="2020-09-10T18:29:22 IST" duration-ms="9962">
       <class name="com.atmecs.assignments.Selenium.Assignmant1">
-        <test-method is-config="true" signature="message()[pri:0, instance:com.atmecs.assignments.Selenium.Assignmant1@3c9d0b9d]" started-at="2020-09-10T13:39:05 IST" name="message" finished-at="2020-09-10T13:39:05 IST" duration-ms="7" status="PASS">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.atmecs.assignments.Selenium.Assignmant1@7f010382]" started-at="2020-09-10T18:29:12 IST" name="beforeSuite" finished-at="2020-09-10T18:29:12 IST" duration-ms="9" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method is-config="true" signature="message()[pri:0, instance:com.atmecs.assignments.Selenium.Assignmant1@7f010382]" started-at="2020-09-10T18:29:12 IST" name="message" finished-at="2020-09-10T18:29:12 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- message -->
-        <test-method is-config="true" signature="greeting()[pri:0, instance:com.atmecs.assignments.Selenium.Assignmant1@3c9d0b9d]" started-at="2020-09-10T13:39:05 IST" name="greeting" finished-at="2020-09-10T13:39:05 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="greeting()[pri:0, instance:com.atmecs.assignments.Selenium.Assignmant1@7f010382]" started-at="2020-09-10T18:29:12 IST" name="greeting" finished-at="2020-09-10T18:29:12 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- greeting -->
-        <test-method is-config="true" signature="infoBeforeLaunching()[pri:0, instance:com.atmecs.assignments.Selenium.Assignmant1@3c9d0b9d]" started-at="2020-09-10T13:39:05 IST" name="infoBeforeLaunching" finished-at="2020-09-10T13:39:05 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="infoBeforeLaunching()[pri:0, instance:com.atmecs.assignments.Selenium.Assignmant1@7f010382]" started-at="2020-09-10T18:29:13 IST" name="infoBeforeLaunching" finished-at="2020-09-10T18:29:13 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- infoBeforeLaunching -->
-        <test-method signature="settingAndLaunchingDriver()[pri:0, instance:com.atmecs.assignments.Selenium.Assignmant1@3c9d0b9d]" started-at="2020-09-10T13:39:05 IST" name="settingAndLaunchingDriver" finished-at="2020-09-10T13:39:12 IST" duration-ms="6356" status="PASS">
+        <test-method signature="settingAndLaunchingDriver()[pri:0, instance:com.atmecs.assignments.Selenium.Assignmant1@7f010382]" started-at="2020-09-10T18:29:13 IST" name="settingAndLaunchingDriver" finished-at="2020-09-10T18:29:18 IST" duration-ms="5553" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- settingAndLaunchingDriver -->
-        <test-method is-config="true" signature="infoAfterLaunching()[pri:0, instance:com.atmecs.assignments.Selenium.Assignmant1@3c9d0b9d]" started-at="2020-09-10T13:39:12 IST" name="infoAfterLaunching" finished-at="2020-09-10T13:39:12 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="infoAfterLaunching()[pri:0, instance:com.atmecs.assignments.Selenium.Assignmant1@7f010382]" started-at="2020-09-10T18:29:18 IST" name="infoAfterLaunching" finished-at="2020-09-10T18:29:18 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- infoAfterLaunching -->
-        <test-method is-config="true" signature="infoBeforeLaunching()[pri:0, instance:com.atmecs.assignments.Selenium.Assignmant1@3c9d0b9d]" started-at="2020-09-10T13:39:12 IST" name="infoBeforeLaunching" finished-at="2020-09-10T13:39:12 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="infoBeforeLaunching()[pri:0, instance:com.atmecs.assignments.Selenium.Assignmant1@7f010382]" started-at="2020-09-10T18:29:18 IST" name="infoBeforeLaunching" finished-at="2020-09-10T18:29:18 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- infoBeforeLaunching -->
-        <test-method signature="validatingPage()[pri:0, instance:com.atmecs.assignments.Selenium.Assignmant1@3c9d0b9d]" started-at="2020-09-10T13:39:12 IST" name="validatingPage" finished-at="2020-09-10T13:39:12 IST" duration-ms="22" status="PASS">
+        <test-method signature="validatingPage()[pri:0, instance:com.atmecs.assignments.Selenium.Assignmant1@7f010382]" started-at="2020-09-10T18:29:18 IST" name="validatingPage" finished-at="2020-09-10T18:29:18 IST" duration-ms="26" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validatingPage -->
-        <test-method is-config="true" signature="warning()[pri:0, instance:com.atmecs.assignments.Selenium.Assignmant1@3c9d0b9d]" started-at="2020-09-10T13:39:12 IST" name="warning" finished-at="2020-09-10T13:39:12 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- warning -->
-        <test-method is-config="true" signature="infoAfterLaunching()[pri:0, instance:com.atmecs.assignments.Selenium.Assignmant1@3c9d0b9d]" started-at="2020-09-10T13:39:12 IST" name="infoAfterLaunching" finished-at="2020-09-10T13:39:12 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="infoAfterLaunching()[pri:0, instance:com.atmecs.assignments.Selenium.Assignmant1@7f010382]" started-at="2020-09-10T18:29:18 IST" name="infoAfterLaunching" finished-at="2020-09-10T18:29:18 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- infoAfterLaunching -->
-        <test-method is-config="true" signature="closingDriver()[pri:0, instance:com.atmecs.assignments.Selenium.Assignmant1@3c9d0b9d]" started-at="2020-09-10T13:39:12 IST" name="closingDriver" finished-at="2020-09-10T13:39:16 IST" duration-ms="4340" status="PASS">
+        <test-method is-config="true" signature="greeting1()[pri:0, instance:com.atmecs.assignments.Selenium.Assignmant1@7f010382]" started-at="2020-09-10T18:29:18 IST" name="greeting1" finished-at="2020-09-10T18:29:18 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- greeting1 -->
+        <test-method is-config="true" signature="closingDriver()[pri:0, instance:com.atmecs.assignments.Selenium.Assignmant1@7f010382]" started-at="2020-09-10T18:29:18 IST" name="closingDriver" finished-at="2020-09-10T18:29:22 IST" duration-ms="4328" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closingDriver -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.atmecs.assignments.Selenium.Assignmant1@7f010382]" started-at="2020-09-10T18:29:22 IST" name="afterSuite" finished-at="2020-09-10T18:29:22 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
       </class> <!-- com.atmecs.assignments.Selenium.Assignmant1 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
