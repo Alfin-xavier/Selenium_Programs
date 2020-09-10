@@ -29,7 +29,7 @@ public class Assignmant1
 		System.out.println("Browser Launching and hit the url and validate the page");
 	}
 	
-	@Test
+	@Test(priority=0)
 	public void settingAndLaunchingDriver() 
 	{
 		System.setProperty("webdriver.chrome.driver", "C:\\drivers\\chromedriver.exe");
@@ -37,10 +37,16 @@ public class Assignmant1
 		driver.get("https://www.google.com");
 	}
 	
-	@Test
-	public void validatingPage()
+	@Test(priority=2)
+	public void gettingPageTitle()
 	{
 		System.out.println("Page Title:" + driver.getTitle() + "\n");
+		
+	}
+	
+	@Test(priority=1)
+	public void gettingAndValidatingUrl()
+	{
 		String url = driver.getCurrentUrl();
 		System.out.println("Current Url:" + url + "\n");
 		Assert.assertEquals(url, "https://www.google.com/");
@@ -57,7 +63,6 @@ public class Assignmant1
 	{
 		System.out.println("Browser exited \n");
 	}
-	
 
 	@BeforeSuite
 	public void beforeSuite()
@@ -70,6 +75,7 @@ public class Assignmant1
 	{
 		System.out.println("This will be execute after all the test\n");
 	}
+	
 	@AfterTest(description="Going to close the browser") // will execute after the @AfterClass()
 	public void closingDriver() 
 	{

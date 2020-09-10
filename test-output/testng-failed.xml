@@ -9,8 +9,7 @@
           <include name="closingDriver"/>
           <include name="beforeSuite"/>
           <include name="infoAfterLaunching"/>
-          <include name="validatingPage"/>
-          <include name="settingAndLaunchingDriver"/>
+          <include name="gettingAndValidatingUrl"/>
           <include name="greeting"/>
           <include name="greeting1"/>
           <include name="afterSuite"/>

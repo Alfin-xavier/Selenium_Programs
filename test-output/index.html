@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\alfin.anthonyraj\AppData\Local\Temp\testng-eclipse-584292329\testng-customsuite.xml</span>
+                    <span>C:\Users\alfin.anthonyraj\AppData\Local\Temp\testng-eclipse-1632818449\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,12 +104,17 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.atmecs.assignments.Selenium.Assignmant1" class="method navigator-link" hash-for-method="settingAndLaunchingDriver">settingAndLaunchingDriver</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="com.atmecs.assignments.Selenium.Assignmant1" class="method navigator-link" hash-for-method="gettingAndValidatingUrl">gettingAndValidatingUrl</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.atmecs.assignments.Selenium.Assignmant1" class="method navigator-link" hash-for-method="validatingPage">validatingPage</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="com.atmecs.assignments.Selenium.Assignmant1" class="method navigator-link" hash-for-method="gettingPageTitle">gettingPageTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.atmecs.assignments.Selenium.Assignmant1" class="method navigator-link" hash-for-method="settingAndLaunchingDriver">settingAndLaunchingDriver</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -132,16 +137,23 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="settingAndLaunchingDriver">
-                  </a> <!-- settingAndLaunchingDriver -->
-                  <span class="method-name">settingAndLaunchingDriver</span>
+                  <a name="gettingAndValidatingUrl">
+                  </a> <!-- gettingAndValidatingUrl -->
+                  <span class="method-name">gettingAndValidatingUrl</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="validatingPage">
-                  </a> <!-- validatingPage -->
-                  <span class="method-name">validatingPage</span>
+                  <a name="gettingPageTitle">
+                  </a> <!-- gettingPageTitle -->
+                  <span class="method-name">gettingPageTitle</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="settingAndLaunchingDriver">
+                  </a> <!-- settingAndLaunchingDriver -->
+                  <span class="method-name">settingAndLaunchingDriver</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -149,7 +161,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\alfin.anthonyraj\AppData\Local\Temp\testng-eclipse-584292329\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\alfin.anthonyraj\AppData\Local\Temp\testng-eclipse-1632818449\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -198,20 +210,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'settingAndLaunchingDriver')
 data.setCell(0, 2, 'com.atmecs.assignments.Selenium.Assignmant1')
-data.setCell(0, 3, 7051);
+data.setCell(0, 3, 5568);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'validatingPage')
+data.setCell(1, 1, 'gettingAndValidatingUrl')
 data.setCell(1, 2, 'com.atmecs.assignments.Selenium.Assignmant1')
 data.setCell(1, 3, 17);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'gettingPageTitle')
+data.setCell(2, 2, 'com.atmecs.assignments.Selenium.Assignmant1')
+data.setCell(2, 3, 14);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 7 seconds</span>
+              <span class="suite-total-time">Total running time: 5 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -244,47 +260,59 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
                 <span class="method-name">message</span>
-                <span class="method-start">13 ms</span>
+                <span class="method-start">9 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
                 <span class="method-name">greeting</span>
-                <span class="method-start">30 ms</span>
+                <span class="method-start">24 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">infoBeforeLaunching</span>
-                <span class="method-start">45 ms</span>
+                <span class="method-start">34 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">settingAndLaunchingDriver</span>
-                <span class="method-start">46 ms</span>
+                <span class="method-start">35 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">infoAfterLaunching</span>
-                <span class="method-start">7102 ms</span>
+                <span class="method-start">5611 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">infoBeforeLaunching</span>
-                <span class="method-start">7104 ms</span>
+                <span class="method-start">5617 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">validatingPage</span>
-                <span class="method-start">7104 ms</span>
+                <span class="method-name">gettingAndValidatingUrl</span>
+                <span class="method-start">5618 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">infoAfterLaunching</span>
-                <span class="method-start">7123 ms</span>
+                <span class="method-start">5637 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">infoBeforeLaunching</span>
+                <span class="method-start">5639 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">gettingPageTitle</span>
+                <span class="method-start">5639 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">infoAfterLaunching</span>
+                <span class="method-start">5655 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">greeting1</span>
-                <span class="method-start">7125 ms</span>
+                <span class="method-start">5657 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-test after">
                 <span class="method-name">closingDriver</span>
-                <span class="method-start">7128 ms</span>
+                <span class="method-start">5658 ms</span>
               </div> <!-- configuration-test after -->
               <div class="configuration-suite after">
                 <span class="method-name">afterSuite</span>
-                <span class="method-start">11516 ms</span>
+                <span class="method-start">10065 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
