@@ -48,7 +48,7 @@ public class Assignmant1
 	public void gettingAndValidatingUrl()
 	{
 		String url = driver.getCurrentUrl();
-		System.out.println("Current Url:" + url + "\n");
+		System.out.println("Current Url: " + url + "\n");
 		Assert.assertEquals(url, "https://www.google.com/");
 	}
 

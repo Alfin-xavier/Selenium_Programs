@@ -3,19 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.atmecs.assignments.Selenium.Assignmant1">
+      <class name="com.atmecs.assignments.Selenium.Assignment2">
         <methods>
-          <include name="infoBeforeLaunching"/>
-          <include name="closingDriver"/>
-          <include name="beforeSuite"/>
-          <include name="infoAfterLaunching"/>
-          <include name="gettingAndValidatingUrl"/>
-          <include name="greeting"/>
-          <include name="greeting1"/>
-          <include name="afterSuite"/>
-          <include name="message"/>
+          <include name="settingAndLaunchingDriver"/>
+          <include name="closeDriver"/>
+          <include name="contactUsScript"/>
         </methods>
-      </class> <!-- com.atmecs.assignments.Selenium.Assignmant1 -->
+      </class> <!-- com.atmecs.assignments.Selenium.Assignment2 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
