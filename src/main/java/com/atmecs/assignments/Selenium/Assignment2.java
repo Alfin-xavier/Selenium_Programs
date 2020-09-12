@@ -31,8 +31,8 @@ public class Assignment2
 	  
 		  driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		  driver.findElement(By.id("signin2")).click();
-		  driver.findElement(By.id("sign-username")).sendKeys("Jarwish");
-		  driver.findElement(By.id("sign-password")).sendKeys("Alfin@11896");
+		  driver.findElement(By.id("sign-username")).sendKeys("ABC");
+		  driver.findElement(By.id("sign-password")).sendKeys("abc@112");
 		  driver.findElement(By.
 		  xpath("//div[@id='signInModal']//div//div//div[3]//button[@class='btn btn-primary']")).click();
 		  Thread.sleep(2000); 
@@ -47,8 +47,8 @@ public class Assignment2
 		  
 		  driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		  driver.findElement(By.id("login2")).click();
-		  driver.findElement(By.id("loginusername")).sendKeys("Jarwish");
-		  driver.findElement(By.id("loginpassword")).sendKeys("Alfin@11896");
+		  driver.findElement(By.id("loginusername")).sendKeys("ABC");
+		  driver.findElement(By.id("loginpassword")).sendKeys("abc@112");
 		  driver.findElement(By.xpath("//div[@id='logInModal']//div//div//button[@class='btn btn-primary']")).click();
 		  Thread.sleep(2000);
 		  
