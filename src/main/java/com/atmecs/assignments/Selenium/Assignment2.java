@@ -26,7 +26,7 @@ public class Assignment2
 	
 	
 	  @Test(priority = 1) 
-	  public void signInTest() throws InterruptedException
+	  public void signUpTest() throws InterruptedException
 	  {
 	  
 		  driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
