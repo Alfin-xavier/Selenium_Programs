@@ -85,8 +85,9 @@ public class Assignment2
 		driver.findElement(By.id("recipient-name")).sendKeys("Alfin Xavier");
 		driver.findElement(By.id("message-text")).sendKeys("It's a good site to practice automation");
 		WebDriverWait w= new WebDriverWait(driver, 5);
-		w.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath("//div[@id='exampleModal']//div//div//div[@class='modal-footer']//button[2]"))));
-		driver.findElement(By.xpath("//div[@id='exampleModal']//div//div//div[@class='modal-footer']//button[@class='btn btn-primary']")).click();
+		WebElement button=driver.findElement(By.xpath("//div[@id='exampleModal']//div//div//div[@class='modal-footer']//button[2]"));
+		w.until(ExpectedConditions.elementToBeClickable(button));
+		button.click();
 		Thread.sleep(1000);
 		driver.switchTo().alert().accept();
 		Thread.sleep(1000); 
