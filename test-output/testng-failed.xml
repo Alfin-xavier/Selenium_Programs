@@ -5,7 +5,9 @@
     <classes>
       <class name="com.atmecs.assignments.Selenium.Assignment2">
         <methods>
+          <include name="selectAndAddToCartProduct"/>
           <include name="settingAndLaunchingDriver"/>
+          <include name="logInTest"/>
           <include name="closeDriver"/>
           <include name="contactUsScript"/>
         </methods>

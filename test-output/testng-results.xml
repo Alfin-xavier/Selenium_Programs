@@ -2,32 +2,32 @@
 <testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-09-12T21:32:45 IST" name="Default suite" finished-at="2020-09-12T21:33:23 IST" duration-ms="38756">
+  <suite started-at="2020-09-13T15:36:06 IST" name="Default suite" finished-at="2020-09-13T15:36:37 IST" duration-ms="31349">
     <groups>
     </groups>
-    <test started-at="2020-09-12T21:32:45 IST" name="Default test" finished-at="2020-09-12T21:33:23 IST" duration-ms="38756">
+    <test started-at="2020-09-13T15:36:06 IST" name="Default test" finished-at="2020-09-13T15:36:37 IST" duration-ms="31349">
       <class name="com.atmecs.assignments.Selenium.Assignment2">
-        <test-method is-config="true" signature="settingAndLaunchingDriver()[pri:0, instance:com.atmecs.assignments.Selenium.Assignment2@1ffe63b9]" started-at="2020-09-12T21:32:45 IST" name="settingAndLaunchingDriver" finished-at="2020-09-12T21:32:56 IST" duration-ms="11129" status="PASS">
+        <test-method is-config="true" signature="settingAndLaunchingDriver()[pri:0, instance:com.atmecs.assignments.Selenium.Assignment2@1ffe63b9]" started-at="2020-09-13T15:36:06 IST" name="settingAndLaunchingDriver" finished-at="2020-09-13T15:36:14 IST" duration-ms="8043" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- settingAndLaunchingDriver -->
-        <test-method signature="signInTest()[pri:1, instance:com.atmecs.assignments.Selenium.Assignment2@1ffe63b9]" started-at="2020-09-12T21:32:56 IST" name="signInTest" finished-at="2020-09-12T21:32:59 IST" duration-ms="3530" status="PASS">
+        <test-method signature="signUpTest()[pri:1, instance:com.atmecs.assignments.Selenium.Assignment2@1ffe63b9]" started-at="2020-09-13T15:36:14 IST" name="signUpTest" finished-at="2020-09-13T15:36:18 IST" duration-ms="3475" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- signInTest -->
-        <test-method signature="logInTest()[pri:2, instance:com.atmecs.assignments.Selenium.Assignment2@1ffe63b9]" started-at="2020-09-12T21:32:59 IST" name="logInTest" finished-at="2020-09-12T21:33:02 IST" duration-ms="2390" status="PASS">
+        </test-method> <!-- signUpTest -->
+        <test-method signature="logInTest()[pri:2, instance:com.atmecs.assignments.Selenium.Assignment2@1ffe63b9]" started-at="2020-09-13T15:36:18 IST" name="logInTest" finished-at="2020-09-13T15:36:20 IST" duration-ms="2368" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logInTest -->
-        <test-method signature="selectAndAddToCartProduct()[pri:3, instance:com.atmecs.assignments.Selenium.Assignment2@1ffe63b9]" started-at="2020-09-12T21:33:02 IST" name="selectAndAddToCartProduct" finished-at="2020-09-12T21:33:20 IST" duration-ms="18688" status="PASS">
+        <test-method signature="selectAndAddToCartProduct()[pri:3, instance:com.atmecs.assignments.Selenium.Assignment2@1ffe63b9]" started-at="2020-09-13T15:36:20 IST" name="selectAndAddToCartProduct" finished-at="2020-09-13T15:36:34 IST" duration-ms="14323" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectAndAddToCartProduct -->
-        <test-method signature="contactUsScript()[pri:4, instance:com.atmecs.assignments.Selenium.Assignment2@1ffe63b9]" started-at="2020-09-12T21:33:20 IST" name="contactUsScript" finished-at="2020-09-12T21:33:23 IST" duration-ms="2733" status="PASS">
+        <test-method signature="contactUsScript()[pri:4, instance:com.atmecs.assignments.Selenium.Assignment2@1ffe63b9]" started-at="2020-09-13T15:36:34 IST" name="contactUsScript" finished-at="2020-09-13T15:36:37 IST" duration-ms="2551" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- contactUsScript -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:com.atmecs.assignments.Selenium.Assignment2@1ffe63b9]" started-at="2020-09-12T21:33:23 IST" name="closeDriver" finished-at="2020-09-12T21:33:23 IST" duration-ms="226" status="PASS">
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:com.atmecs.assignments.Selenium.Assignment2@1ffe63b9]" started-at="2020-09-13T15:36:37 IST" name="closeDriver" finished-at="2020-09-13T15:36:37 IST" duration-ms="540" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
