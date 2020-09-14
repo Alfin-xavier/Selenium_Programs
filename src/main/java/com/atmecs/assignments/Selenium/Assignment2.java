@@ -6,6 +6,7 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 import org.testng.annotations.*;
 
 public class Assignment2
@@ -31,7 +32,7 @@ public class Assignment2
 	  
 		  driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		  driver.findElement(By.id("signin2")).click();
-		  driver.findElement(By.id("sign-username")).sendKeys("Abc");
+		  driver.findElement(By.id("sign-username")).sendKeys("ABC");
 		  driver.findElement(By.id("sign-password")).sendKeys("abc@112");
 		  driver.findElement(By.xpath("//div[@id='signInModal']//div//div//div[3]//button[@class='btn btn-primary']")).click();
 		  Thread.sleep(2000); 
@@ -46,7 +47,7 @@ public class Assignment2
 		  
 		  driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		  driver.findElement(By.id("login2")).click();
-		  driver.findElement(By.id("loginusername")).sendKeys("Abc");
+		  driver.findElement(By.id("loginusername")).sendKeys("ABC");
 		  driver.findElement(By.id("loginpassword")).sendKeys("abc@112");
 		  driver.findElement(By.xpath("//div[@id='logInModal']//div//div//button[@class='btn btn-primary']")).click();
 		  Thread.sleep(2000);
@@ -60,13 +61,19 @@ public class Assignment2
 		  driver.findElement(By.xpath("//a[text()='Samsung galaxy s6']")).click();
 		  driver.findElement(By.cssSelector("a.btn.btn-success.btn-lg")).click();
 		  Thread.sleep(2000); 
-		  driver.switchTo().alert().accept(); 
+		  String message1=driver.switchTo().alert().getText();
+		  if(message1.contains("Product added"))
+			  System.out.println(message1);
+		  driver.switchTo().alert().accept();
 		  Thread.sleep(2000);
 		  for(int i=1;i<=2;i++) 
 			  driver.navigate().back(); 
 		  driver.findElement(By.xpath("//div[@id='tbodyid']//div[5]//div//h4//a[@class='hrefch']")).click();
 		  driver.findElement(By.cssSelector("a.btn.btn-success.btn-lg")).click();
 		  Thread.sleep(2000); 
+		  String message2=driver.switchTo().alert().getText();
+		  if(message1.contains("Product added"))
+			  System.out.println(message2);
 		  driver.switchTo().alert().accept();
 		  
 		  // click the cart to check whether the product added or not
