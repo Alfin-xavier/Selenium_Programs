@@ -56,12 +56,10 @@ public class Assignment3_Task1
 		if(roundtrip.isSelected()==false)
 			roundtrip.click();
 		Thread.sleep(1000);
-		driver.findElement(By.cssSelector("input.react-autosuggest__input.react-autosuggest__input--open")).sendKeys("Tri");
+		//driver.findElement(By.cssSelector("input.react-autosuggest__input.react-autosuggest__input--open")).sendKeys("Tri");
 	}
 	
-	@AfterTest
-	public void closingDriver()
-	{
-		driver.close();
-	}
+	/*
+	 * @AfterTest public void closingDriver() { driver.close(); }
+	 */
 }
