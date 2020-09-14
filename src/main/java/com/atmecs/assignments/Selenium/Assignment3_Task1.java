@@ -58,4 +58,10 @@ public class Assignment3_Task1
 		Thread.sleep(1000);
 		driver.findElement(By.cssSelector("input.react-autosuggest__input.react-autosuggest__input--open")).sendKeys("Tri");
 	}
+	
+	@AfterTest
+	public void closingDriver()
+	{
+		driver.close();
+	}
 }
