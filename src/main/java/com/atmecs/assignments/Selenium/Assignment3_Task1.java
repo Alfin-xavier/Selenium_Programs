@@ -25,7 +25,29 @@ public class Assignment3_Task1
 		
 	}
 	
-	
+	@Test(priority=0)
+	public void handlingWindowsViaSignup() throws InterruptedException
+	{
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		driver.findElement(By.cssSelector("li.makeFlex.hrtlCenter.font10.makeRelative.lhUser")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.cssSelector("span.font14.darkGreyText.latoBold")).click();
+		Set<String> ids = driver.getWindowHandles();
+		Iterator<String> windows = ids.iterator();
+		String parentWindow = windows.next();
+		String childwindow = windows.next();
+		driver.switchTo().window(childwindow);
+		driver.findElement(By.id("identifierId")).sendKeys("shanealfin720@gmail.com");
+		WebElement next1 = driver.findElement(By.cssSelector("button.VfPpkd-LgbsSe.VfPpkd-LgbsSe-OWXEXe-k8QpJ.VfPpkd-LgbsSe-OWXEXe-dgl2Hf.nCP5yc.AjY5Oe.DuMIQc.qIypjc.TrZEUc"));
+		next1.click();
+		Thread.sleep(2000);
+		WebElement password=driver.findElement(By.xpath("//div[@class='aXBtI I0VJ4d Wic03c']//div//input[@name='password']"));
+		password.sendKeys("alfinxavier.a");
+		WebElement next2=driver.findElement(By.cssSelector("button.VfPpkd-LgbsSe.VfPpkd-LgbsSe-OWXEXe-k8QpJ.VfPpkd-LgbsSe-OWXEXe-dgl2Hf.nCP5yc.AjY5Oe.DuMIQc.qIypjc.TrZEUc"));
+		next2.click();
+		 Thread.sleep(1000); 
+		 
+	}
 	
 	 @Test(priority=1)
 	  public void bookingTwoWayTrip() throws InterruptedException

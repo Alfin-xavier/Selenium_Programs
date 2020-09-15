@@ -2,38 +2,36 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-09-15T11:42:19 IST" name="Default suite" finished-at="2020-09-15T11:42:41 IST" duration-ms="22121">
+  <suite started-at="2020-09-15T16:45:12 IST" name="Default suite" finished-at="2020-09-15T16:45:33 IST" duration-ms="21238">
     <groups>
     </groups>
-    <test started-at="2020-09-15T11:42:19 IST" name="Default test" finished-at="2020-09-15T11:42:41 IST" duration-ms="22121">
-      <class name="com.atmecs.assignments.Selenium.Assignment3_Task1">
-        <test-method is-config="true" signature="settingAndLaunchingDriver()[pri:0, instance:com.atmecs.assignments.Selenium.Assignment3_Task1@159f197]" started-at="2020-09-15T11:42:19 IST" name="settingAndLaunchingDriver" finished-at="2020-09-15T11:42:26 IST" duration-ms="7741" status="PASS">
+    <test started-at="2020-09-15T16:45:12 IST" name="Default test" finished-at="2020-09-15T16:45:33 IST" duration-ms="21238">
+      <class name="com.atmecs.assignments.Selenium.Assignment3_Travel">
+        <test-method is-config="true" signature="settingAndLaunchingDriver()[pri:0, instance:com.atmecs.assignments.Selenium.Assignment3_Travel@6193932a]" started-at="2020-09-15T16:45:12 IST" name="settingAndLaunchingDriver" finished-at="2020-09-15T16:45:23 IST" duration-ms="11581" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- settingAndLaunchingDriver -->
-        <test-method signature="bookingTwoWayTrip()[pri:1, instance:com.atmecs.assignments.Selenium.Assignment3_Task1@159f197]" started-at="2020-09-15T11:42:26 IST" name="bookingTwoWayTrip" finished-at="2020-09-15T11:42:37 IST" duration-ms="10187" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method signature="twoWayTripSelectionTest()[pri:0, instance:com.atmecs.assignments.Selenium.Assignment3_Travel@6193932a]" started-at="2020-09-15T16:45:23 IST" name="twoWayTripSelectionTest" finished-at="2020-09-15T16:45:33 IST" duration-ms="9598" status="FAIL">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='fsw_inputBox dates inactiveWidget activeWidget']"}
+              <![CDATA[stale element reference: element is not attached to the page document
   (Session info: chrome=85.0.4183.102)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'ATMECSINLT-601', ip: '192.168.163.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.102, chrome: {chromedriverVersion: 85.0.4183.83 (94abc2237ae0c..., userDataDir: C:\Users\ALFIN~1.ANT\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:62117}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: d9865f3b0755716f3ee436f9eb59f915
-*** Element info: {Using=xpath, value=//div[@class='fsw_inputBox dates inactiveWidget activeWidget']}]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.102, chrome: {chromedriverVersion: 85.0.4183.83 (94abc2237ae0c..., userDataDir: C:\Users\ALFIN~1.ANT\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:53641}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 039c1a1e63d424c204f34687277b4d00]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='fsw_inputBox dates inactiveWidget activeWidget']"}
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
   (Session info: chrome=85.0.4183.102)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'ATMECSINLT-601', ip: '192.168.163.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.102, chrome: {chromedriverVersion: 85.0.4183.83 (94abc2237ae0c..., userDataDir: C:\Users\ALFIN~1.ANT\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:62117}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: d9865f3b0755716f3ee436f9eb59f915
-*** Element info: {Using=xpath, value=//div[@class='fsw_inputBox dates inactiveWidget activeWidget']}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.102, chrome: {chromedriverVersion: 85.0.4183.83 (94abc2237ae0c..., userDataDir: C:\Users\ALFIN~1.ANT\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:53641}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 039c1a1e63d424c204f34687277b4d00
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -45,11 +43,9 @@ at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCo
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at com.atmecs.assignments.Selenium.Assignment3_Task1.bookingTwoWayTrip(Assignment3_Task1.java:57)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:166)
+at com.atmecs.assignments.Selenium.Assignment3_Travel.twoWayTripSelectionTest(Assignment3_Travel.java:90)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -80,15 +76,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- bookingTwoWayTrip -->
-        <test-method is-config="true" signature="closingDriver()[pri:0, instance:com.atmecs.assignments.Selenium.Assignment3_Task1@159f197]" started-at="2020-09-15T11:42:37 IST" name="closingDriver" finished-at="2020-09-15T11:42:41 IST" duration-ms="4123" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closingDriver -->
-      </class> <!-- com.atmecs.assignments.Selenium.Assignment3_Task1 -->
+        </test-method> <!-- twoWayTripSelectionTest -->
+      </class> <!-- com.atmecs.assignments.Selenium.Assignment3_Travel -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
