@@ -123,6 +123,6 @@ public class Assignment3_Travel
 	  @AfterTest
 	  public void closingDriver()
 	  {
-		  driver.close();
+		  driver.quit();
 	  }
 }

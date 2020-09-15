@@ -6,6 +6,7 @@
       <class name="com.atmecs.assignments.Selenium.Assignment3_Travel">
         <methods>
           <include name="twoWayTripSelectionTest"/>
+          <include name="closingDriver"/>
           <include name="settingAndLaunchingDriver"/>
         </methods>
       </class> <!-- com.atmecs.assignments.Selenium.Assignment3_Travel -->
