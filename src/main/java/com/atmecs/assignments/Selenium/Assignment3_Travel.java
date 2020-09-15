@@ -13,6 +13,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -117,5 +118,11 @@ public class Assignment3_Travel
 		WebElement search = driver.findElement(By.xpath("//button[@class='BpkButtonBase_bpk-button__1pnhi BpkButtonBase_bpk-button--large__24bi- App_submit-button__3OawW App_submit-button-oneline__23Etl']"));
 		search.click();
 		Thread.sleep(2000);
+	  }
+	  
+	  @AfterTest
+	  public void closingDriver()
+	  {
+		  driver.close();
 	  }
 }
