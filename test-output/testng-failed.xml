@@ -5,6 +5,7 @@
     <classes>
       <class name="com.atmecs.assignments.Selenium.Assignment3_Task1">
         <methods>
+          <include name="closingDriver"/>
           <include name="bookingTwoWayTrip"/>
           <include name="settingAndLaunchingDriver"/>
         </methods>
