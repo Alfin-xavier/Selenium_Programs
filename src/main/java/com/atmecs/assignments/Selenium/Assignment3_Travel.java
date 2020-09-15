@@ -48,7 +48,9 @@ public class Assignment3_Travel
 	  driver.switchTo().window(childwindow);
 	  
 	  driver.findElement(By.id("identifierId")).sendKeys("shanealfin720@gmail.com");
-	  WebElement next1 = driver.findElement(By.cssSelector("button.VfPpkd-LgbsSe.VfPpkd-LgbsSe-OWXEXe-k8QpJ.VfPpkd-LgbsSe-OWXEXe-dgl2Hf.nCP5yc.AjY5Oe.DuMIQc.qIypjc.TrZEUc")); next1.click(); Thread.sleep(2000);
+	  WebElement next1 = driver.findElement(By.cssSelector("button.VfPpkd-LgbsSe.VfPpkd-LgbsSe-OWXEXe-k8QpJ.VfPpkd-LgbsSe-OWXEXe-dgl2Hf.nCP5yc.AjY5Oe.DuMIQc.qIypjc.TrZEUc")); 
+	  next1.click();
+	  Thread.sleep(2000);
 	  
 	  WebElement password=driver.findElement(By.xpath("//div[@class='aXBtI I0VJ4d Wic03c']//div//input[@name='password']"));
 	  password.sendKeys("alfinxavier.a"); 
