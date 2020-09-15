@@ -6,7 +6,6 @@ import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -29,7 +28,7 @@ public class Assignment3_Travel
 		driver = new ChromeDriver();
 		driver.get("https://www.skyscanner.co.in/");
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS); 
+		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS); 
 		
 	}
 	
@@ -45,7 +44,8 @@ public class Assignment3_Travel
 	  Set<String> ids = driver.getWindowHandles(); 
 	  Iterator<String> windows = ids.iterator();
 	  String parentWindow = windows.next();
-	  String childwindow = windows.next(); driver.switchTo().window(childwindow);
+	  String childwindow = windows.next(); 
+	  driver.switchTo().window(childwindow);
 	  
 	  driver.findElement(By.id("identifierId")).sendKeys("shanealfin720@gmail.com");
 	  WebElement next1 = driver.findElement(By.cssSelector("button.VfPpkd-LgbsSe.VfPpkd-LgbsSe-OWXEXe-k8QpJ.VfPpkd-LgbsSe-OWXEXe-dgl2Hf.nCP5yc.AjY5Oe.DuMIQc.qIypjc.TrZEUc")); next1.click(); Thread.sleep(2000);
@@ -54,7 +54,7 @@ public class Assignment3_Travel
 	  password.sendKeys("alfinxavier.a"); 
 	  WebElement next2=driver.findElement(By.xpath("//div[@id='passwordNext']//div//button"));
 	  next2.click(); 
-	  Thread.sleep(5000);
+	  Thread.sleep(10000);
 	  
 	  }
 	 
@@ -68,18 +68,17 @@ public class Assignment3_Travel
 		  Thread.sleep(1000);
 		  
 		 WebElement source = driver.findElement(By.xpath("//input[@id='fsc-origin-search']"));
-		 source.clear();
 		 source.sendKeys("chennai");
-		 Thread.sleep(3000);
+		 Thread.sleep(1000);
 		 
 		 WebElement destination = driver.findElement(By.xpath("//input[@id='fsc-destination-search']"));
 		 destination.sendKeys("bangalore"); 
-		 Thread.sleep(2000);
+		 Thread.sleep(1000);
 		 
 		driver.findElement(By.xpath("//button[@id='depart-fsc-datepicker-button']")).click();
 		WebElement departdate = driver.findElement(By.cssSelector("button.BpkCalendarDate_bpk-calendar-date__MuPBz.BpkCalendarDate_bpk-calendar-date--today__3HDEP"));
 		departdate.click();
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		
 		driver.findElement(By.xpath("//button[@id='return-fsc-datepicker-button']")).click();
 		List<WebElement> returndate=driver.findElements(By.cssSelector("button.BpkCalendarDate_bpk-calendar-date__MuPBz"));
@@ -94,35 +93,31 @@ public class Assignment3_Travel
 		}
 		Thread.sleep(2000);
 		
-		WebElement travellers = driver.findElement(By.xpath("//span[@class='CabinClassTravellersSelector_CabinClassTravellersSelector__triggertext__2uAq3']"));
+		WebDriverWait wait=new WebDriverWait(driver,5);
+		WebElement travellers = driver.findElement(By.xpath("//div[@class='CabinClassTravellersSelector_form-item__2dJHc']//button[@id='CabinClassTravellersSelector_fsc-class-travellers-trigger__1qSiF']"));
+		wait.until(ExpectedConditions.elementToBeClickable(travellers));
 		travellers.click();
-		Thread.sleep(2000);
 		
 		Select cabinclass = new Select(driver.findElement(By.id("search-controls-cabin-class-dropdown")));
 		cabinclass.selectByValue("First");
-		Thread.sleep(1000);
 		
 		WebElement adult = driver.findElement(By.xpath("//button[@class='BpkButtonBase_bpk-button__1pnhi BpkButtonBase_bpk-button--icon-only__3J3rW BpkButtonSecondary_bpk-button--secondary__1-kNc BpkNudger_bpk-nudger__button__YOZET']"));
-		for(int i=1;i<2;i++)
+		for(int i=1;i<=2;i++)
 			adult.click();
-		Thread.sleep(1000);
-		
-		driver.findElement(By.xpath("//button[@class='BpkLink_bpk-link__1Wmr3']")).click();
-		Thread.sleep(2000);
-		
+
 		WebElement checkbox = driver.findElement(By.xpath("//input[@name='directOnly']"));
 		if(checkbox.isSelected()!=true)
 			checkbox.click();
-		Thread.sleep(2000);
 		
 		WebElement search = driver.findElement(By.xpath("//button[@class='BpkButtonBase_bpk-button__1pnhi BpkButtonBase_bpk-button--large__24bi- App_submit-button__3OawW App_submit-button-oneline__23Etl']"));
 		search.click();
-		Thread.sleep(2000);
+		
 	  }
 	  
-	  @AfterTest
-	  public void closingDriver()
-	  {
-		  driver.quit();
-	  }
+		  @AfterTest 
+		  public void closingDriver() 
+		  {
+			  driver.quit();
+		  }
+		 
 }
