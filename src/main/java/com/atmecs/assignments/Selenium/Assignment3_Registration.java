@@ -85,8 +85,11 @@ public class Assignment3_Registration
 	{
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 	
-		WebElement subdriver1 = driver.findElement(By.xpath("//div[@class='col-md-6 col-xs-6 col-sm-6 social pull-right']"));
-		for(int i=1;i<subdriver1.findElements(By.tagName("a")).size();i++)
+		WebElement subdriver = driver.findElement(By.id("footer"));
+		System.out.println(subdriver.findElements(By.tagName("a")).size());
+		
+		WebElement subdriver1 = subdriver.findElement(By.xpath("//div[@class='col-md-6 col-xs-6 col-sm-6 social pull-right']"));
+		for(int i=0;i<subdriver1.findElements(By.tagName("a")).size();i++)
 		{
 			String link=Keys.chord(Keys.CONTROL,Keys.ENTER);
 			subdriver1.findElements(By.tagName("a")).get(i).sendKeys(link);
