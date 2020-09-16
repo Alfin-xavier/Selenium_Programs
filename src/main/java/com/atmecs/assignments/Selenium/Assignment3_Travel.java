@@ -59,7 +59,7 @@ public class Assignment3_Travel
 	  Thread.sleep(10000);
 	  
 	  }
-	 
+	
 	  
 	  @Test(priority=0)
 	  public void twoWayTripSelectionTest() throws InterruptedException
@@ -70,7 +70,7 @@ public class Assignment3_Travel
 		  Thread.sleep(1000);
 		  
 		 WebElement source = driver.findElement(By.xpath("//input[@id='fsc-origin-search']"));
-		 source.sendKeys("chennai");
+		 source.sendKeys("coimbatore");
 		 Thread.sleep(1000);
 		 
 		 WebElement destination = driver.findElement(By.xpath("//input[@id='fsc-destination-search']"));
@@ -93,12 +93,12 @@ public class Assignment3_Travel
 				returndate.get(i).click();
 			}
 		}
-		Thread.sleep(2000);
 		
-		WebDriverWait wait=new WebDriverWait(driver,5);
 		WebElement travellers = driver.findElement(By.xpath("//form/div[2]/div[3]/div/div/button/span"));
+		
+		WebDriverWait wait=new WebDriverWait(driver,30);
 		wait.until(ExpectedConditions.elementToBeClickable(travellers));
-		travellers.click();
+			travellers.click();
 		
 		Select cabinclass = new Select(driver.findElement(By.id("search-controls-cabin-class-dropdown")));
 		cabinclass.selectByValue("First");
