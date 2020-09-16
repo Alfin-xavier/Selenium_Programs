@@ -23,7 +23,7 @@ public class Assignment3_Registration
 		driver = new ChromeDriver();
 		driver.get("http://demo.automationtesting.in/Register.html");
 		driver.manage().window().maximize();
-		
+		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
 	}
 	
 	@Test(priority=1)
@@ -83,7 +83,6 @@ public class Assignment3_Registration
 	@Test(priority=2) // Handling child window
 	public void windowsHandling()
 	{
-		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 	
 		WebElement subdriver = driver.findElement(By.id("footer"));
 		System.out.println(subdriver.findElements(By.tagName("a")).size());
