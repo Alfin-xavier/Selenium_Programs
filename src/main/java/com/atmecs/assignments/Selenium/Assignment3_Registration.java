@@ -5,9 +5,6 @@ import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.*;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
@@ -50,7 +47,7 @@ public class Assignment3_Registration
 			checkbox.click();
 		driver.findElement(By.id("msdd")).click();
 		for(int i=1;i<=3;i++)
-			driver.findElement(By.xpath("//multi-select//div[2]//ul")).click();
+			driver.findElement(By.xpath("//multi-select//div//ul")).click();
 		
 		//Select Dropdowns
 		Select skills=new Select(driver.findElement(By.id("Skills")));
@@ -87,14 +84,23 @@ public class Assignment3_Registration
 	public void windowsHandling()
 	{
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-		driver.findElement(By.cssSelector("span.fa.fa-youtube-square")).click();
-		Set<String> ids= driver.getWindowHandles();
-		Iterator<String> windows=ids.iterator();
-		String parent_window= windows.next();
-		String child_Window = windows.next();
-		WebDriver childwindow=driver.switchTo().window(child_Window);
-		System.out.println("Child Window Title: "+childwindow.getTitle()+"\n");
-		driver.close();
+	
+		WebElement subdriver1 = driver.findElement(By.xpath("//div[@class='col-md-6 col-xs-6 col-sm-6 social pull-right']"));
+		for(int i=1;i<subdriver1.findElements(By.tagName("a")).size();i++)
+		{
+			String link=Keys.chord(Keys.CONTROL,Keys.ENTER);
+			subdriver1.findElements(By.tagName("a")).get(i).sendKeys(link);
+		}
+		
+		//switching taps
+		Set<String> windows=driver.getWindowHandles();
+		Iterator<String> itr=windows.iterator();
+		//get the title of each tap
+		while(itr.hasNext())
+		{
+			driver.switchTo().window(itr.next());
+			System.out.println(driver.getTitle());
+		}
 		
 	}
 	

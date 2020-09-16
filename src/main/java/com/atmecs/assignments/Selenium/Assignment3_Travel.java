@@ -96,7 +96,7 @@ public class Assignment3_Travel
 		Thread.sleep(2000);
 		
 		WebDriverWait wait=new WebDriverWait(driver,5);
-		WebElement travellers = driver.findElement(By.xpath("//div[@class='CabinClassTravellersSelector_form-item__2dJHc']//button[@id='CabinClassTravellersSelector_fsc-class-travellers-trigger__1qSiF']"));
+		WebElement travellers = driver.findElement(By.xpath("//form/div[2]/div[3]/div/div/button/span"));
 		wait.until(ExpectedConditions.elementToBeClickable(travellers));
 		travellers.click();
 		
