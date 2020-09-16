@@ -1,29 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-09-16T20:52:51 IST" name="Default suite" finished-at="2020-09-16T20:53:50 IST" duration-ms="58645">
+  <suite started-at="2020-09-16T22:20:30 IST" name="Default suite" finished-at="2020-09-16T22:20:47 IST" duration-ms="17398">
     <groups>
     </groups>
-    <test started-at="2020-09-16T20:52:51 IST" name="Default test" finished-at="2020-09-16T20:53:50 IST" duration-ms="58645">
-      <class name="com.atmecs.assignments.Selenium.Assignment3_Travel">
-        <test-method is-config="true" signature="settingAndLaunchingDriver()[pri:0, instance:com.atmecs.assignments.Selenium.Assignment3_Travel@78aab498]" started-at="2020-09-16T20:52:51 IST" name="settingAndLaunchingDriver" finished-at="2020-09-16T20:53:07 IST" duration-ms="15157" status="PASS">
+    <test started-at="2020-09-16T22:20:30 IST" name="Default test" finished-at="2020-09-16T22:20:47 IST" duration-ms="17398">
+      <class name="com.atmecs.assignments.Selenium.Assignment4">
+        <test-method is-config="true" signature="settingAndLaunchingDriver()[pri:0, instance:com.atmecs.assignments.Selenium.Assignment4@6193932a]" started-at="2020-09-16T22:20:30 IST" name="settingAndLaunchingDriver" finished-at="2020-09-16T22:20:40 IST" duration-ms="9801" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- settingAndLaunchingDriver -->
-        <test-method signature="twoWayTripSelectionTest()[pri:0, instance:com.atmecs.assignments.Selenium.Assignment3_Travel@78aab498]" started-at="2020-09-16T20:53:07 IST" name="twoWayTripSelectionTest" finished-at="2020-09-16T20:53:26 IST" duration-ms="19803" status="PASS">
+        <test-method signature="chatBoxTest()[pri:0, instance:com.atmecs.assignments.Selenium.Assignment4@6193932a]" started-at="2020-09-16T22:20:40 IST" name="chatBoxTest" finished-at="2020-09-16T22:20:47 IST" duration-ms="7549" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- twoWayTripSelectionTest -->
-        <test-method signature="handlingWindowTest()[pri:1, instance:com.atmecs.assignments.Selenium.Assignment3_Travel@78aab498]" started-at="2020-09-16T20:53:26 IST" name="handlingWindowTest" finished-at="2020-09-16T20:53:49 IST" duration-ms="22282" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- handlingWindowTest -->
-        <test-method is-config="true" signature="closingDriver()[pri:0, instance:com.atmecs.assignments.Selenium.Assignment3_Travel@78aab498]" started-at="2020-09-16T20:53:49 IST" name="closingDriver" finished-at="2020-09-16T20:53:50 IST" duration-ms="1332" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closingDriver -->
-      </class> <!-- com.atmecs.assignments.Selenium.Assignment3_Travel -->
+        </test-method> <!-- chatBoxTest -->
+      </class> <!-- com.atmecs.assignments.Selenium.Assignment4 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
