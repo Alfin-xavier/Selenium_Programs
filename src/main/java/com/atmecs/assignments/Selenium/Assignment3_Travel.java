@@ -42,6 +42,7 @@ public class Assignment3_Travel
 	@Test(priority=1) 
 	  public void handlingWindowTest() throws InterruptedException 
 	  { 
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		  WebElement login = driver.findElement(By.xpath("//button[@class='BpkButtonBase_bpk-button__26z7U BpkButtonSecondary_bpk-button--secondary__2JNwP']")); login.click();
 	  
 	  WebElement gmail = driver.findElement(By.xpath("//button[@class='BpkButtonBase_bpk-button__27cTF BpkButtonSecondary_bpk-button--secondary__2jp0a SocialLoginButton_SocialLoginButton__wideButton__1DpyO']")); 
@@ -95,7 +96,6 @@ public class Assignment3_Travel
 		WebElement travellers = driver.findElement(By.xpath("//span[@class='CabinClassTravellersSelector_CabinClassTravellersSelector__triggertext__2uAq3']"));
 		travellers.click();
 		Thread.sleep(3000);
-		
 		
 		Select cabinclass = new Select(driver.findElement(By.id("search-controls-cabin-class-dropdown")));
 		cabinclass.selectByValue("First");
