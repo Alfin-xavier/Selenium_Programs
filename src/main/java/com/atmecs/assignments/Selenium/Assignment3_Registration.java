@@ -80,7 +80,7 @@ public class Assignment3_Registration
 		driver.findElement(By.id("submitbtn")).click();
 	}
 	
-	@Test(priority=2) // Handling child window
+	@Test(priority=2) // Handling windows
 	public void windowsHandling()
 	{
 	

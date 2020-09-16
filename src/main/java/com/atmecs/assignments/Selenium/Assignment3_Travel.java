@@ -1,16 +1,21 @@
 package com.atmecs.assignments.Selenium;
 
+import java.time.Duration;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
+import java.util.function.Function;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.Wait;
+import org.openqa.selenium.support.ui.Wait.*;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -96,9 +101,21 @@ public class Assignment3_Travel
 		
 		WebElement travellers = driver.findElement(By.xpath("//form/div[2]/div[3]/div/div/button/span"));
 		
-		WebDriverWait wait=new WebDriverWait(driver,30);
-		wait.until(ExpectedConditions.elementToBeClickable(travellers));
-			travellers.click();
+		Wait<WebDriver> wait = new FluentWait<WebDriver>(driver)
+				
+				.withTimeout(Duration.ofSeconds(60))
+				.pollingEvery(Duration.ofSeconds(3))
+				.ignoring(Exception.class);
+		
+		WebElement traveller =wait.until(new Function<WebDriver, WebElement>() 
+		{
+			public WebElement apply(WebDriver driver)
+			{
+				travellers.click();
+				return travellers;
+			}
+		});
+		
 		
 		Select cabinclass = new Select(driver.findElement(By.id("search-controls-cabin-class-dropdown")));
 		cabinclass.selectByValue("First");
