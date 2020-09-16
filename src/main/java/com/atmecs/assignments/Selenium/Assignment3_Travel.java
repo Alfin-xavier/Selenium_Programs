@@ -33,12 +33,13 @@ public class Assignment3_Travel
 		driver = new ChromeDriver();
 		driver.get("https://www.skyscanner.co.in/");
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS); 
+		driver.manage().timeouts().implicitlyWait(150, TimeUnit.SECONDS); 
+		driver.manage().deleteAllCookies();
 		
 	}
 	
 	
-	  @Test(priority=1) 
+	@Test(priority=1) 
 	  public void handlingWindowTest() throws InterruptedException 
 	  { 
 		  WebElement login = driver.findElement(By.xpath("//button[@class='BpkButtonBase_bpk-button__26z7U BpkButtonSecondary_bpk-button--secondary__2JNwP']")); login.click();
@@ -88,48 +89,31 @@ public class Assignment3_Travel
 		Thread.sleep(1000);
 		
 		driver.findElement(By.xpath("//button[@id='return-fsc-datepicker-button']")).click();
-		List<WebElement> returndate=driver.findElements(By.cssSelector("button.BpkCalendarDate_bpk-calendar-date__MuPBz"));
-		int count=returndate.size();
-		for(int i=0;i<count;i++)
-		{
-			String dates=returndate.get(i).getText();
-			if(dates.equalsIgnoreCase("29"))
-			{
-				returndate.get(i).click();
-			}
-		}
+		driver.findElement(By.xpath("//button[@aria-label='Tuesday, 22 September 2020']")).click();
+		Thread.sleep(3000);
 		
-		WebElement travellers = driver.findElement(By.xpath("//form/div[2]/div[3]/div/div/button/span"));
-		
-		Wait<WebDriver> wait = new FluentWait<WebDriver>(driver)
-				
-				.withTimeout(Duration.ofSeconds(60))
-				.pollingEvery(Duration.ofSeconds(3))
-				.ignoring(Exception.class);
-		
-		WebElement traveller =wait.until(new Function<WebDriver, WebElement>() 
-		{
-			public WebElement apply(WebDriver driver)
-			{
-				travellers.click();
-				return travellers;
-			}
-		});
+		WebElement travellers = driver.findElement(By.xpath("//span[@class='CabinClassTravellersSelector_CabinClassTravellersSelector__triggertext__2uAq3']"));
+		travellers.click();
+		Thread.sleep(3000);
 		
 		
 		Select cabinclass = new Select(driver.findElement(By.id("search-controls-cabin-class-dropdown")));
 		cabinclass.selectByValue("First");
+		Thread.sleep(2000);
 		
 		WebElement adult = driver.findElement(By.xpath("//button[@class='BpkButtonBase_bpk-button__1pnhi BpkButtonBase_bpk-button--icon-only__3J3rW BpkButtonSecondary_bpk-button--secondary__1-kNc BpkNudger_bpk-nudger__button__YOZET']"));
 		for(int i=1;i<=2;i++)
 			adult.click();
-
+		Thread.sleep(2000);
+		
 		WebElement checkbox = driver.findElement(By.xpath("//input[@name='directOnly']"));
 		if(checkbox.isSelected()!=true)
 			checkbox.click();
+		Thread.sleep(2000);
 		
 		WebElement search = driver.findElement(By.xpath("//button[@class='BpkButtonBase_bpk-button__1pnhi BpkButtonBase_bpk-button--large__24bi- App_submit-button__3OawW App_submit-button-oneline__23Etl']"));
 		search.click();
+		Thread.sleep(2000);
 		
 	  }
 	  

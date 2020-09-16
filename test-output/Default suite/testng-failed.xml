@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.atmecs.assignments.Selenium.TravelSite">
+      <class name="com.atmecs.assignments.Selenium.Assignment3_Travel">
         <methods>
-          <include name="handlingWindows"/>
+          <include name="twoWayTripSelectionTest"/>
+          <include name="closingDriver"/>
           <include name="settingAndLaunchingDriver"/>
         </methods>
-      </class> <!-- com.atmecs.assignments.Selenium.TravelSite -->
+      </class> <!-- com.atmecs.assignments.Selenium.Assignment3_Travel -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
