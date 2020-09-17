@@ -50,22 +50,22 @@ public class LocatorTest
 	@Test(priority=2)
 	public void fillingRequiredFieldsTest() throws InterruptedException
 	{
-		readDatas();
-		String uname = properties.getProperty("username");
-		uname.sendKeys(properties.getProperty(name));
-		Thread.sleep(5000);
+		
+		WebElement username = driver.findElement(By.id("name"));
+		username.sendKeys("Abc");
+
 		WebElement mob = driver.findElement(By.xpath("(//input[@class='lc-1gz7fd7 e1xplv9i0'])[2]"));
 		mob.sendKeys("9123456780");
-		Thread.sleep(2000);
+
 		WebElement usermail = driver.findElement(By.id("email"));
 		usermail.sendKeys("xyz@gmail.com");
-		Thread.sleep(2000);
+
 		WebElement checkbox = driver.findElement(By.xpath("//input[@class='lc-5mlnfz e81sjne0']"));
 		checkbox.click();
-		Thread.sleep(2000);
+
 		Select s=new Select(driver.findElement(By.xpath("//select[@class='lc-jjhb0i egtcv0s1']")));
 		s.selectByValue("index1_1");
-		Thread.sleep(2000);
+
 		WebElement	button = driver.findElement(By.xpath("//button[@class='lc-tf4jp6 esv0owm0']"));
 		js.executeScript("arguments[0].click();", button);
 		Thread.sleep(3000);
