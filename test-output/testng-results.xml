@@ -1,20 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-09-16T22:20:30 IST" name="Default suite" finished-at="2020-09-16T22:20:47 IST" duration-ms="17398">
+  <suite started-at="2020-09-17T13:54:26 IST" name="Default suite" finished-at="2020-09-17T13:55:02 IST" duration-ms="35871">
     <groups>
     </groups>
-    <test started-at="2020-09-16T22:20:30 IST" name="Default test" finished-at="2020-09-16T22:20:47 IST" duration-ms="17398">
+    <test started-at="2020-09-17T13:54:26 IST" name="Default test" finished-at="2020-09-17T13:55:02 IST" duration-ms="35871">
       <class name="com.atmecs.assignments.Selenium.Assignment4">
-        <test-method is-config="true" signature="settingAndLaunchingDriver()[pri:0, instance:com.atmecs.assignments.Selenium.Assignment4@6193932a]" started-at="2020-09-16T22:20:30 IST" name="settingAndLaunchingDriver" finished-at="2020-09-16T22:20:40 IST" duration-ms="9801" status="PASS">
+        <test-method is-config="true" signature="settingAndLaunchingDriver()[pri:0, instance:com.atmecs.assignments.Selenium.Assignment4@12e61fe6]" started-at="2020-09-17T13:54:26 IST" name="settingAndLaunchingDriver" finished-at="2020-09-17T13:54:36 IST" duration-ms="10674" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- settingAndLaunchingDriver -->
-        <test-method signature="chatBoxTest()[pri:0, instance:com.atmecs.assignments.Selenium.Assignment4@6193932a]" started-at="2020-09-16T22:20:40 IST" name="chatBoxTest" finished-at="2020-09-16T22:20:47 IST" duration-ms="7549" status="PASS">
+        <test-method signature="handlingFrameAndClickChatIconTest()[pri:1, instance:com.atmecs.assignments.Selenium.Assignment4@12e61fe6]" started-at="2020-09-17T13:54:36 IST" name="handlingFrameAndClickChatIconTest" finished-at="2020-09-17T13:54:44 IST" duration-ms="7678" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- chatBoxTest -->
+        </test-method> <!-- handlingFrameAndClickChatIconTest -->
+        <test-method signature="fillingRequiredFieldsTest()[pri:2, instance:com.atmecs.assignments.Selenium.Assignment4@12e61fe6]" started-at="2020-09-17T13:54:44 IST" name="fillingRequiredFieldsTest" finished-at="2020-09-17T13:55:01 IST" duration-ms="17216" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fillingRequiredFieldsTest -->
+        <test-method is-config="true" signature="closingDriver()[pri:0, instance:com.atmecs.assignments.Selenium.Assignment4@12e61fe6]" started-at="2020-09-17T13:55:01 IST" name="closingDriver" finished-at="2020-09-17T13:55:02 IST" duration-ms="238" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closingDriver -->
       </class> <!-- com.atmecs.assignments.Selenium.Assignment4 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

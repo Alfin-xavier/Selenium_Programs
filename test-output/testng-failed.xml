@@ -6,7 +6,8 @@
       <class name="com.atmecs.assignments.Selenium.Assignment4">
         <methods>
           <include name="settingAndLaunchingDriver"/>
-          <include name="chatBoxTest"/>
+          <include name="fillingRequiredFieldsTest"/>
+          <include name="closingDriver"/>
         </methods>
       </class> <!-- com.atmecs.assignments.Selenium.Assignment4 -->
     </classes>
