@@ -29,12 +29,12 @@ public class Assignment4
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS); 
 		driver.manage().deleteAllCookies();
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 	}
 	
 	@Test(priority=1)
 	public void handlingFrameAndClickChatIconTest() throws InterruptedException
 	{
+		
 		Wait<WebDriver> wait=new WebDriverWait(driver,30);
 		
 		WebElement frame = driver.findElement(By.id("chat-widget"));
@@ -48,23 +48,28 @@ public class Assignment4
 		
 		js.executeScript("arguments[0].click();", chaticon);
 		
+		js.executeScript("window.scrollBy(0,700)");
+		
 	}
 	
 	@Test(priority=2)
 	public void fillingRequiredFieldsTest() throws InterruptedException
 	{
-		driver.findElement(By.id("name")).sendKeys("Abc");
-		Thread.sleep(5000);
-		WebElement element2 = driver.findElement(By.xpath("(//input[@class='lc-1gz7fd7 e1xplv9i0'])[2]"));
-		element2.sendKeys("9123456780");
-		Thread.sleep(2000);
-		driver.findElement(By.id("email")).sendKeys("xyz@gmail.com");
-		Thread.sleep(2000);
-		driver.findElement(By.xpath("//input[@class='lc-5mlnfz e81sjne0']")).click();
-		Thread.sleep(2000);
+		WebElement username = driver.findElement(By.id("name"));
+		username.sendKeys("Abc");
+		
+		WebElement mob = driver.findElement(By.xpath("(//input[@class='lc-1gz7fd7 e1xplv9i0'])[2]"));
+		mob.sendKeys("9123456780");
+
+		WebElement usermail = driver.findElement(By.id("email"));
+		usermail.sendKeys("xyz@gmail.com");
+
+		WebElement checkbox = driver.findElement(By.xpath("//input[@class='lc-5mlnfz e81sjne0']"));
+		checkbox.click();
+
 		Select s=new Select(driver.findElement(By.xpath("//select[@class='lc-jjhb0i egtcv0s1']")));
 		s.selectByValue("index1_1");
-		Thread.sleep(2000);
+		
 		WebElement	button = driver.findElement(By.xpath("//button[@class='lc-tf4jp6 esv0owm0']"));
 		js.executeScript("arguments[0].click();", button);
 		Thread.sleep(3000);

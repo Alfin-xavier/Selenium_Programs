@@ -50,9 +50,9 @@ public class LocatorTest
 	@Test(priority=2)
 	public void fillingRequiredFieldsTest() throws InterruptedException
 	{
-		
-		WebElement username = driver.findElement(By.id("name"));
-		username.sendKeys("Abc");
+		readDatas();
+		String uname = properties.getProperty("username");
+		uname.sendKeys(properties.getProperty(name));
 		Thread.sleep(5000);
 		WebElement mob = driver.findElement(By.xpath("(//input[@class='lc-1gz7fd7 e1xplv9i0'])[2]"));
 		mob.sendKeys("9123456780");
