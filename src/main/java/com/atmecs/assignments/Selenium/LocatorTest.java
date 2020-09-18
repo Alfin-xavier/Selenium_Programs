@@ -1,13 +1,14 @@
 package com.atmecs.assignments.Selenium;
 
+import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.*;
-import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.*;
 
 
@@ -33,17 +34,19 @@ public class LocatorTest
 	@Test(priority=1)
 	public void handlingFrameAndClickChatIconTest() throws InterruptedException, IOException
 	{
-		readDatas();
+Wait<WebDriver> wait=new WebDriverWait(driver,30);
 		
-		Wait<WebDriver> wait=new WebDriverWait(driver,30);
-		String switchframe = properties.getProperty("frame");
-		wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(properties.getProperty(switchframe)));
+		WebElement frame = driver.findElement(By.id(properties.getProperty("frame")));
 		
-		driver.switchTo().frame(switchframe);
+		wait.until(ExpectedConditions.elementToBeClickable(frame));
+		driver.switchTo().frame(frame);
 		
-		js = (JavascriptExecutor) driver;
-		String clickicon = properties.getProperty("chaticon");
-		js.executeScript("arguments[0].click();", clickicon);
+		 js = (JavascriptExecutor) driver;
+		 js.executeScript("window.scrollBy(0,1000)");
+		
+		 WebElement chaticon = driver.findElement(By.xpath(properties.getProperty("chaticon")));
+		
+		js.executeScript("arguments[0].click();", chaticon);
 		
 	}
 	
@@ -51,36 +54,49 @@ public class LocatorTest
 	public void fillingRequiredFieldsTest() throws InterruptedException
 	{
 		
-		WebElement username = driver.findElement(By.id("name"));
-		username.sendKeys("Abc");
+		WebElement username = driver.findElement(By.id(properties.getProperty("username")));
+		username.sendKeys(properties.getProperty("name"));
+		Thread.sleep(2000);
+		WebElement mob = driver.findElement(By.xpath(properties.getProperty("mob")));
+		mob.sendKeys(properties.getProperty("number"));
 
-		WebElement mob = driver.findElement(By.xpath("(//input[@class='lc-1gz7fd7 e1xplv9i0'])[2]"));
-		mob.sendKeys("9123456780");
+		WebElement usermail = driver.findElement(By.id(properties.getProperty("usermail")));
+		usermail.sendKeys(properties.getProperty("gmail"));
 
-		WebElement usermail = driver.findElement(By.id("email"));
-		usermail.sendKeys("xyz@gmail.com");
-
-		WebElement checkbox = driver.findElement(By.xpath("//input[@class='lc-5mlnfz e81sjne0']"));
+		WebElement checkbox = driver.findElement(By.xpath(properties.getProperty("checkbox")));
 		checkbox.click();
 
-		Select s=new Select(driver.findElement(By.xpath("//select[@class='lc-jjhb0i egtcv0s1']")));
-		s.selectByValue("index1_1");
+		Select client=new Select(driver.findElement(By.xpath(properties.getProperty("client"))));
+		client.selectByValue("index1_1");
 
-		WebElement	button = driver.findElement(By.xpath("//button[@class='lc-tf4jp6 esv0owm0']"));
+		WebElement	button = driver.findElement(By.xpath(properties.getProperty("button")));
 		js.executeScript("arguments[0].click();", button);
 		Thread.sleep(3000);
 	}
 	
 	public void readDatas() throws IOException
 	{
-		properties = new Properties();
-		FileInputStream file = new FileInputStream(System.getProperty("User.dir")+"/locators/assignmnet4.properties");
-		properties.load(file);
+		File file = new File(properties.getProperty("file"));
+		  
+		FileInputStream fileInput = null;
+		try {
+			fileInput = new FileInputStream(file);
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}
+		 properties = new Properties();
+		
+		//load properties file
+		try {
+			properties.load(fileInput);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 	}
 	
 	@AfterTest
 	public void closingDriver()
 	{
-		driver.close();
+		driver.quit();
 	}
 }

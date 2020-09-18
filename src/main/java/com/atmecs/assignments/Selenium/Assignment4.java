@@ -8,7 +8,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -43,18 +42,21 @@ public class Assignment4
 		driver.switchTo().frame(frame);
 		
 		 js = (JavascriptExecutor) driver;
+		 js.executeScript("window.scrollBy(0,1000)");
 		
 		 WebElement chaticon = driver.findElement(By.xpath("//div[@class='lc-1z06j5z e1dmt1bi1']"));
 		
 		js.executeScript("arguments[0].click();", chaticon);
 		
-		js.executeScript("window.scrollBy(0,700)");
+		
 		
 	}
 	
 	@Test(priority=2)
 	public void fillingRequiredFieldsTest() throws InterruptedException
 	{
+		
+		
 		WebElement username = driver.findElement(By.id("name"));
 		username.sendKeys("Abc");
 		
