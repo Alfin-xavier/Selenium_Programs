@@ -19,7 +19,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class Assignment3_Travel 
+public class Assignment3_AutomatingTravelSite 
 {
 	WebDriver driver;
 	Properties properties;
