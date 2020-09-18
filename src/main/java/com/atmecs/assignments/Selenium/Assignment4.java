@@ -48,8 +48,6 @@ public class Assignment4
 		
 		js.executeScript("arguments[0].click();", chaticon);
 		
-		
-		
 	}
 	
 	@Test(priority=2)

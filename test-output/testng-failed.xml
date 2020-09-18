@@ -5,7 +5,6 @@
     <classes>
       <class name="com.atmecs.assignments.Selenium.LocatorTest">
         <methods>
-          <include name="handlingFrameAndClickChatIconTest"/>
           <include name="settingAndLaunchingDriver"/>
           <include name="fillingRequiredFieldsTest"/>
           <include name="closingDriver"/>

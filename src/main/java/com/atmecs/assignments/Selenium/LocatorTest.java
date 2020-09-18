@@ -34,7 +34,7 @@ public class LocatorTest
 	@Test(priority=1)
 	public void handlingFrameAndClickChatIconTest() throws InterruptedException, IOException
 	{
-Wait<WebDriver> wait=new WebDriverWait(driver,30);
+		Wait<WebDriver> wait=new WebDriverWait(driver,30);
 		
 		WebElement frame = driver.findElement(By.id(properties.getProperty("frame")));
 		
@@ -56,7 +56,7 @@ Wait<WebDriver> wait=new WebDriverWait(driver,30);
 		
 		WebElement username = driver.findElement(By.id(properties.getProperty("username")));
 		username.sendKeys(properties.getProperty("name"));
-		Thread.sleep(2000);
+		
 		WebElement mob = driver.findElement(By.xpath(properties.getProperty("mob")));
 		mob.sendKeys(properties.getProperty("number"));
 
@@ -76,7 +76,7 @@ Wait<WebDriver> wait=new WebDriverWait(driver,30);
 	
 	public void readDatas() throws IOException
 	{
-		File file = new File(properties.getProperty("file"));
+		File file = new File("C:\\Users\\alfin.anthonyraj\\eclipse-workspace\\Selenium\\locators\\assignmnet4.properties");
 		  
 		FileInputStream fileInput = null;
 		try {
