@@ -47,4 +47,10 @@ public class LogInTest
 		  Thread.sleep(2000);
 		  
 	  }
+	 
+	 @AfterTest 
+	  public void closingDriver() 
+	  {
+		  driver.quit();
+	  }
 }

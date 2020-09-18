@@ -1,114 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-09-18T19:41:01 IST" name="Default suite" finished-at="2020-09-18T19:41:36 IST" duration-ms="35348">
+  <suite started-at="2020-09-18T20:03:39 IST" name="Suite" finished-at="2020-09-18T20:03:49 IST" duration-ms="10258">
     <groups>
     </groups>
-    <test started-at="2020-09-18T19:41:01 IST" name="Default test" finished-at="2020-09-18T19:41:36 IST" duration-ms="35348">
-      <class name="com.atmecs.automation.HandlingFramesUsingJavaScriptExecuter.FillingRequiredFields">
-        <test-method is-config="true" signature="settingAndLaunchingDriver()[pri:0, instance:com.atmecs.automation.HandlingFramesUsingJavaScriptExecuter.FillingRequiredFields@78aab498]" started-at="2020-09-18T19:41:01 IST" name="settingAndLaunchingDriver" finished-at="2020-09-18T19:41:10 IST" duration-ms="9491" status="PASS">
+    <test started-at="2020-09-18T20:03:39 IST" name="Test" finished-at="2020-09-18T20:03:49 IST" duration-ms="10258">
+      <class name="com.atmecs.automation.Annotations.Assignmant1">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.atmecs.automation.Annotations.Assignmant1@1e802ef9]" started-at="2020-09-18T20:03:39 IST" name="beforeSuite" finished-at="2020-09-18T20:03:39 IST" duration-ms="9" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method is-config="true" signature="message()[pri:0, instance:com.atmecs.automation.Annotations.Assignmant1@1e802ef9]" started-at="2020-09-18T20:03:39 IST" name="message" finished-at="2020-09-18T20:03:39 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- message -->
+        <test-method is-config="true" signature="greeting()[pri:0, instance:com.atmecs.automation.Annotations.Assignmant1@1e802ef9]" started-at="2020-09-18T20:03:39 IST" name="greeting" finished-at="2020-09-18T20:03:39 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- greeting -->
+        <test-method is-config="true" signature="infoBeforeLaunching()[pri:0, instance:com.atmecs.automation.Annotations.Assignmant1@1e802ef9]" started-at="2020-09-18T20:03:39 IST" name="infoBeforeLaunching" finished-at="2020-09-18T20:03:39 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- infoBeforeLaunching -->
+        <test-method signature="settingAndLaunchingDriver()[pri:0, instance:com.atmecs.automation.Annotations.Assignmant1@1e802ef9]" started-at="2020-09-18T20:03:39 IST" name="settingAndLaunchingDriver" finished-at="2020-09-18T20:03:45 IST" duration-ms="5882" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- settingAndLaunchingDriver -->
-        <test-method signature="framehandling()[pri:1, instance:com.atmecs.automation.HandlingFramesUsingJavaScriptExecuter.FillingRequiredFields@78aab498]" started-at="2020-09-18T19:41:10 IST" name="framehandling" finished-at="2020-09-18T19:41:10 IST" duration-ms="11" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at com.atmecs.automation.HandlingFramesUsingJavaScriptExecuter.FillingRequiredFields.framehandling(FillingRequiredFields.java:45)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:821)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
-at org.testng.TestRunner.privateRun(TestRunner.java:767)
-at org.testng.TestRunner.run(TestRunner.java:588)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
-at org.testng.TestNG.runSuites(TestNG.java:1066)
-at org.testng.TestNG.run(TestNG.java:1034)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method is-config="true" signature="infoAfterLaunching()[pri:0, instance:com.atmecs.automation.Annotations.Assignmant1@1e802ef9]" started-at="2020-09-18T20:03:45 IST" name="infoAfterLaunching" finished-at="2020-09-18T20:03:45 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- framehandling -->
-        <test-method signature="fillingRequiredFieldsTest()[pri:2, instance:com.atmecs.automation.HandlingFramesUsingJavaScriptExecuter.FillingRequiredFields@78aab498]" started-at="2020-09-18T19:41:10 IST" name="fillingRequiredFieldsTest" finished-at="2020-09-18T19:41:35 IST" duration-ms="24919" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[Cannot locate an element using id=name
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'ATMECSINLT-601', ip: '192.168.163.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'
-Driver info: driver.version: RemoteWebDriver]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate an element using id=name
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'ATMECSINLT-601', ip: '192.168.163.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'
-Driver info: driver.version: RemoteWebDriver
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-at org.openqa.selenium.By$ById.findElement(By.java:188)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at com.atmecs.automation.HandlingFramesUsingJavaScriptExecuter.FillingRequiredFields.fillingRequiredFieldsTest(FillingRequiredFields.java:52)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:821)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
-at org.testng.TestRunner.privateRun(TestRunner.java:767)
-at org.testng.TestRunner.run(TestRunner.java:588)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
-at org.testng.TestNG.runSuites(TestNG.java:1066)
-at org.testng.TestNG.run(TestNG.java:1034)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        </test-method> <!-- infoAfterLaunching -->
+        <test-method signature="gettingAndValidatingUrl()[pri:1, instance:com.atmecs.automation.Annotations.Assignmant1@1e802ef9]" started-at="2020-09-18T20:03:45 IST" name="gettingAndValidatingUrl" finished-at="2020-09-18T20:03:45 IST" duration-ms="11" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- fillingRequiredFieldsTest -->
-        <test-method is-config="true" signature="closingDriver()[pri:0, instance:com.atmecs.automation.HandlingFramesUsingJavaScriptExecuter.FillingRequiredFields@78aab498]" started-at="2020-09-18T19:41:35 IST" name="closingDriver" finished-at="2020-09-18T19:41:36 IST" duration-ms="867" status="PASS">
+        </test-method> <!-- gettingAndValidatingUrl -->
+        <test-method is-config="true" signature="infoBeforeLaunching()[pri:0, instance:com.atmecs.automation.Annotations.Assignmant1@1e802ef9]" started-at="2020-09-18T20:03:45 IST" name="infoBeforeLaunching" finished-at="2020-09-18T20:03:45 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- infoBeforeLaunching -->
+        <test-method is-config="true" signature="infoAfterLaunching()[pri:0, instance:com.atmecs.automation.Annotations.Assignmant1@1e802ef9]" started-at="2020-09-18T20:03:45 IST" name="infoAfterLaunching" finished-at="2020-09-18T20:03:45 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- infoAfterLaunching -->
+        <test-method signature="gettingPageTitle()[pri:2, instance:com.atmecs.automation.Annotations.Assignmant1@1e802ef9]" started-at="2020-09-18T20:03:45 IST" name="gettingPageTitle" finished-at="2020-09-18T20:03:45 IST" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- gettingPageTitle -->
+        <test-method is-config="true" signature="infoBeforeLaunching()[pri:0, instance:com.atmecs.automation.Annotations.Assignmant1@1e802ef9]" started-at="2020-09-18T20:03:45 IST" name="infoBeforeLaunching" finished-at="2020-09-18T20:03:45 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- infoBeforeLaunching -->
+        <test-method is-config="true" signature="infoAfterLaunching()[pri:0, instance:com.atmecs.automation.Annotations.Assignmant1@1e802ef9]" started-at="2020-09-18T20:03:45 IST" name="infoAfterLaunching" finished-at="2020-09-18T20:03:45 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- infoAfterLaunching -->
+        <test-method is-config="true" signature="greeting1()[pri:0, instance:com.atmecs.automation.Annotations.Assignmant1@1e802ef9]" started-at="2020-09-18T20:03:45 IST" name="greeting1" finished-at="2020-09-18T20:03:45 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- greeting1 -->
+        <test-method is-config="true" signature="closingDriver()[pri:0, instance:com.atmecs.automation.Annotations.Assignmant1@1e802ef9]" started-at="2020-09-18T20:03:45 IST" name="closingDriver" description="Going to close the browser" finished-at="2020-09-18T20:03:49 IST" duration-ms="4317" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closingDriver -->
-      </class> <!-- com.atmecs.automation.HandlingFramesUsingJavaScriptExecuter.FillingRequiredFields -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.atmecs.automation.Annotations.Assignmant1@1e802ef9]" started-at="2020-09-18T20:03:49 IST" name="afterSuite" finished-at="2020-09-18T20:03:49 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- com.atmecs.automation.Annotations.Assignmant1 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

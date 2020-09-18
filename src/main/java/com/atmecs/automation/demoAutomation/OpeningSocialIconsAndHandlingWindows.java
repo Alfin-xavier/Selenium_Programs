@@ -38,7 +38,7 @@ public class OpeningSocialIconsAndHandlingWindows
 		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
 	}
 	
-	@Test
+	@Test(priority=2)
 	public void windowsHandling() throws IOException
 	{
 		WebElement subdriver = driver.findElement(By.id(properties.getProperty("footer")));

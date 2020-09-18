@@ -36,7 +36,7 @@ public class RegistratinFormFilling
 		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
 	}
 	
-	@Test
+	@Test(priority=1)
 	public void registerationTest()
 	{
 		//textBox
