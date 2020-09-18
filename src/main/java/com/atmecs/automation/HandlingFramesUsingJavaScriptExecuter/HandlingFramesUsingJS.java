@@ -1,29 +1,28 @@
+// Handling frames using javascript
+
 package com.atmecs.automation.HandlingFramesUsingJavaScriptExecuter;
 
+import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
-
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.Select;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
+import org.openqa.selenium.support.ui.*;
+import org.testng.annotations.*;
 
-public class FillingRequiredFields 
+
+public class HandlingFramesUsingJS 
 {
 	WebDriver driver;
-	Properties properties;
 	JavascriptExecutor js;
+	Properties properties;
 	@BeforeTest
-	public void settingAndLaunchingDriver() throws IOException 
+	public void settingAndLaunchingDriver() throws InterruptedException, IOException 
 	{
-		
+
 		System.setProperty("webdriver.chrome.driver", "C:\\drivers\\chromedriver.exe");
 		driver = new ChromeDriver();
 		FileInputStream file = new FileInputStream(
@@ -32,7 +31,28 @@ public class FillingRequiredFields
 				properties.load(file);
 		driver.get(properties.getProperty("url"));
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS); 
+		driver.manage().deleteAllCookies();
+		
+	}
+	
+	@Test(priority=1)
+	public void handlingFrameAndClickChatIconTest() throws InterruptedException, IOException
+	{
+		Wait<WebDriver> wait=new WebDriverWait(driver,30);
+		
+		WebElement frame = driver.findElement(By.id(properties.getProperty("frame")));
+		
+		wait.until(ExpectedConditions.elementToBeClickable(frame));
+		driver.switchTo().frame(frame);
+		
+		 js = (JavascriptExecutor) driver;
+		 js.executeScript("window.scrollBy(0,1000)");
+		
+		 WebElement chaticon = driver.findElement(By.xpath(properties.getProperty("chaticon")));
+		
+		js.executeScript("arguments[0].click();", chaticon);
+		
 	}
 	
 	@Test(priority=2)
@@ -59,9 +79,9 @@ public class FillingRequiredFields
 		Thread.sleep(3000);
 	}
 	
-	 @AfterTest 
-	  public void closingDriver() 
-	  {
-		  driver.quit();
-	  }
+	@AfterTest
+	public void closingDriver()
+	{
+		driver.quit();
+	}
 }
