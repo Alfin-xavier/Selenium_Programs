@@ -3,16 +3,13 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.atmecs.automation.demoAutomation.OpeningSocialIconsAndHandlingWindows">
+      <class name="com.atmecs.automation.HandlingFramesUsingJavaScriptExecuter.FillingRequiredFields">
         <methods>
-          <include name="windowsHandling"/>
+          <include name="closingDriver"/>
+          <include name="fillingRequiredFieldsTest"/>
+          <include name="settingAndLaunchingDriver"/>
         </methods>
-      </class> <!-- com.atmecs.automation.demoAutomation.OpeningSocialIconsAndHandlingWindows -->
-      <class name="com.atmecs.automation.demoAutomation.RegistrationTest">
-        <methods>
-          <include name="registerationTest"/>
-        </methods>
-      </class> <!-- com.atmecs.automation.demoAutomation.RegistrationTest -->
+      </class> <!-- com.atmecs.automation.HandlingFramesUsingJavaScriptExecuter.FillingRequiredFields -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
