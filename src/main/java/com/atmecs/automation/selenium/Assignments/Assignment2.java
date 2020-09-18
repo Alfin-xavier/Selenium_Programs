@@ -1,4 +1,6 @@
-package com.atmecs.automation.travelSiteAutomation;
+// Adding product on the cart and checking whether the product has been added or not on www.demoblaze.com
+
+package com.atmecs.automation.selenium.Assignments;
 
 import java.io.File;
 import java.io.FileInputStream;

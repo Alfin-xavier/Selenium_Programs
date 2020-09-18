@@ -1,4 +1,6 @@
-package com.atmecs.automation.travelSiteAutomation;
+// Automationg a Travel website by selecting Two way Trip and handling windows when click on the login/signup
+
+package com.atmecs.automation.selenium.Assignments;
 
 import java.io.File;
 import java.io.FileInputStream;

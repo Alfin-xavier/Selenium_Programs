@@ -1,4 +1,6 @@
-package com.atmecs.automation.travelSiteAutomation;
+// Handling frames using javascript
+
+package com.atmecs.automation.selenium.Assignments;
 
 import java.io.File;
 import java.io.FileInputStream;

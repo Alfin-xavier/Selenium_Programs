@@ -1,4 +1,6 @@
-package com.atmecs.automation.travelSiteAutomation;
+// Filling Registration form and clicking all the social Icons and Handling Those Windows
+
+package com.atmecs.automation.selenium.Assignments;
 
 import java.io.File;
 import java.io.FileInputStream;
