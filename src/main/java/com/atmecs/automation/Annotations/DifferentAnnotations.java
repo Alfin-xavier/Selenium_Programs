@@ -8,7 +8,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.*;
 
-public class Assignmant1 
+public class DifferentAnnotations 
 {
 	WebDriver driver;
 	
