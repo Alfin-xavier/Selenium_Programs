@@ -6,7 +6,8 @@
       <class name="com.atmecs.assignments.Selenium.Assignment1"/>
     </classes> 
    <!-- <packages>
-    <package name="com.atmecs.assignments.Selenium"></package>
-    </packages> --> 
+    <package name="com.atmecs.automation.demoAutomation"></package>
+    </packages>  -->
   </test> <!-- Test -->
+  
 </suite> <!-- Suite -->

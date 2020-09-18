@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.atmecs.assignments.Selenium.LocatorTest">
+      <class name="com.atmecs.automation.travelSiteAutomation.Assignment3_RegistrationFormFilling">
         <methods>
-          <include name="settingAndLaunchingDriver"/>
-          <include name="fillingRequiredFieldsTest"/>
+          <include name="windowsHandling"/>
           <include name="closingDriver"/>
+          <include name="settingAndLaunchingDriver"/>
+          <include name="registerationTest"/>
         </methods>
-      </class> <!-- com.atmecs.assignments.Selenium.LocatorTest -->
+      </class> <!-- com.atmecs.automation.travelSiteAutomation.Assignment3_RegistrationFormFilling -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

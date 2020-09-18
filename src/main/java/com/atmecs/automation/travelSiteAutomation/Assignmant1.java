@@ -1,6 +1,7 @@
+
 //Implementing various test annotation to automate a google webpage
 
-package com.atmecs.assignments.Selenium;
+package com.atmecs.automation.travelSiteAutomation;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;

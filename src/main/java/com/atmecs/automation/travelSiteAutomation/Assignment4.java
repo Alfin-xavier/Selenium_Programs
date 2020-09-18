@@ -1,4 +1,4 @@
-package com.atmecs.assignments.Selenium;
+package com.atmecs.automation.travelSiteAutomation;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -12,7 +12,7 @@ import org.openqa.selenium.support.ui.*;
 import org.testng.annotations.*;
 
 
-public class LocatorTest 
+public class Assignment4 
 {
 	WebDriver driver;
 	JavascriptExecutor js;
@@ -76,7 +76,7 @@ public class LocatorTest
 	
 	public void readDatas() throws IOException
 	{
-		File file = new File("C:\\Users\\alfin.anthonyraj\\eclipse-workspace\\Selenium\\locators\\assignmnet4.properties");
+		File file = new File("C:\\Users\\alfin.anthonyraj\\eclipse-workspace\\Selenium\\locatorsAndTestDatas\\assignmnet4.properties");
 		  
 		FileInputStream fileInput = null;
 		try {
