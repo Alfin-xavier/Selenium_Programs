@@ -8,6 +8,7 @@
           <include name="closingDriver"/>
           <include name="fillingRequiredFieldsTest"/>
           <include name="settingAndLaunchingDriver"/>
+          <include name="framehandling"/>
         </methods>
       </class> <!-- com.atmecs.automation.HandlingFramesUsingJavaScriptExecuter.FillingRequiredFields -->
     </classes>

@@ -3,8 +3,8 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
+      <!-- <class name="com.atmecs.automation.HandlingFramesUsingJavaScriptExecuter.HandlingFramesUsingJS"/> -->
       <class name="com.atmecs.automation.HandlingFramesUsingJavaScriptExecuter.FillingRequiredFields"/>
-      <class name="com.atmecs.automation.HandlingFramesUsingJavaScriptExecuter.HandlingChatIconFrameUsingJS"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
