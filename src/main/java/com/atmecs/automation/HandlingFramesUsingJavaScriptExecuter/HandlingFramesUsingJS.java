@@ -23,10 +23,7 @@ public class HandlingFramesUsingJS
 
 		System.setProperty("webdriver.chrome.driver", "C:\\drivers\\chromedriver.exe");
 		driver = new ChromeDriver();
-		FileInputStream file = new FileInputStream(
-				System.getProperty("user.dir") + "\\locatorsAndTestDatas\\assignmnet4.properties");
-				properties = new Properties();
-				properties.load(file);
+		dataProvider();
 		driver.get(properties.getProperty("url"));
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS); 
@@ -37,6 +34,8 @@ public class HandlingFramesUsingJS
 	@Test
 	public void handlingFrameAndClickChatIconTest() throws InterruptedException, IOException
 	{
+		dataProvider();
+		
 		Wait<WebDriver> wait=new WebDriverWait(driver,30);
 		
 		WebElement frame = driver.findElement(By.id(properties.getProperty("frame")));
@@ -71,6 +70,14 @@ public class HandlingFramesUsingJS
 		WebElement	button = driver.findElement(By.xpath(properties.getProperty("button")));
 		js.executeScript("arguments[0].click();", button);
 		Thread.sleep(3000);
+	}
+	
+	public void dataProvider() throws IOException
+	{
+		FileInputStream file = new FileInputStream(
+				System.getProperty("user.dir") + "\\locatorsAndTestDatas\\assignmnet4.properties");
+				properties = new Properties();
+				properties.load(file);
 	}
 	
 	@AfterTest
