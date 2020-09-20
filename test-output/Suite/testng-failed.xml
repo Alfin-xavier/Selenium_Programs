@@ -3,13 +3,13 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.atmecs.automation.AutomatingTravelSite.LoginWindowHandling">
+      <class name="com.atmecs.automation.AutomatingTravelSite.SearchingFlights">
         <methods>
           <include name="settingAndLaunchingDriver"/>
           <include name="closingDriver"/>
-          <include name="handlingWindowTest"/>
+          <include name="twoWayTripSelectionTest"/>
         </methods>
-      </class> <!-- com.atmecs.automation.AutomatingTravelSite.LoginWindowHandling -->
+      </class> <!-- com.atmecs.automation.AutomatingTravelSite.SearchingFlights -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
