@@ -17,6 +17,7 @@ public class HandlingFramesUsingJS
 	WebDriver driver;
 	JavascriptExecutor js;
 	Properties properties;
+	HelperClass helperclass;
 	@BeforeTest
 	public void settingAndLaunchingDriver() throws InterruptedException, IOException 
 	{
@@ -55,6 +56,8 @@ public class HandlingFramesUsingJS
 		WebElement username = driver.findElement(By.id(properties.getProperty("username")));
 		username.sendKeys(properties.getProperty("name"));
 		
+		//helperclass.textDatas(properties.getProperty("mob"), properties.getProperty("number"));
+		
 		WebElement mob = driver.findElement(By.xpath(properties.getProperty("mob")));
 		mob.sendKeys(properties.getProperty("number"));
 
@@ -63,8 +66,10 @@ public class HandlingFramesUsingJS
 
 		WebElement checkbox = driver.findElement(By.xpath(properties.getProperty("checkbox")));
 		checkbox.click();
+		
+		//helperclass.selectValueFromDropDown(properties.getProperty("client"), "index1_1");
 
-		Select client=new Select(driver.findElement(By.xpath(properties.getProperty("client"))));
+		Select client = new Select(driver.findElement(By.xpath(properties.getProperty("client"))));
 		client.selectByValue("index1_1");
 
 		WebElement	button = driver.findElement(By.xpath(properties.getProperty("button")));

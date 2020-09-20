@@ -1,83 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-09-20T15:18:17 IST" name="Default suite" finished-at="2020-09-20T15:18:21 IST" duration-ms="4003">
+  <suite started-at="2020-09-20T16:17:22 IST" name="Default suite" finished-at="2020-09-20T16:17:54 IST" duration-ms="31430">
     <groups>
     </groups>
-    <test started-at="2020-09-20T15:18:17 IST" name="Default test" finished-at="2020-09-20T15:18:21 IST" duration-ms="4003">
-      <class name="com.atmecs.automation.HandlingFramesUsingJavaScriptExecuter.FillingFormsOnChatWindow">
-        <test-method is-config="true" signature="settingAndLaunchingDriver()[pri:0, instance:com.atmecs.automation.HandlingFramesUsingJavaScriptExecuter.FillingFormsOnChatWindow@6193932a]" started-at="2020-09-20T15:18:17 IST" name="settingAndLaunchingDriver" finished-at="2020-09-20T15:18:21 IST" duration-ms="3920" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at com.atmecs.automation.HandlingFramesUsingJavaScriptExecuter.FillingFormsOnChatWindow.settingAndLaunchingDriver(FillingFormsOnChatWindow.java:30)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:64)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:364)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:318)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:620)
-at org.testng.TestRunner.beforeRun(TestRunner.java:610)
-at org.testng.TestRunner.run(TestRunner.java:581)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
-at org.testng.TestNG.runSuites(TestNG.java:1066)
-at org.testng.TestNG.run(TestNG.java:1034)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+    <test started-at="2020-09-20T16:17:22 IST" name="Default test" finished-at="2020-09-20T16:17:54 IST" duration-ms="31430">
+      <class name="com.atmecs.automation.HandlingFramesUsingJavaScriptExecuter.HandlingFramesUsingJS">
+        <test-method is-config="true" signature="settingAndLaunchingDriver()[pri:0, instance:com.atmecs.automation.HandlingFramesUsingJavaScriptExecuter.HandlingFramesUsingJS@7c469c48]" started-at="2020-09-20T16:17:22 IST" name="settingAndLaunchingDriver" finished-at="2020-09-20T16:17:36 IST" duration-ms="13034" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- settingAndLaunchingDriver -->
-        <test-method signature="fillingRequiredFields()[pri:0, instance:com.atmecs.automation.HandlingFramesUsingJavaScriptExecuter.FillingFormsOnChatWindow@6193932a]" started-at="2020-09-20T15:18:21 IST" name="fillingRequiredFields" finished-at="2020-09-20T15:18:21 IST" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at com.atmecs.automation.HandlingFramesUsingJavaScriptExecuter.FillingFormsOnChatWindow.settingAndLaunchingDriver(FillingFormsOnChatWindow.java:30)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:64)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:364)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:318)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:620)
-at org.testng.TestRunner.beforeRun(TestRunner.java:610)
-at org.testng.TestRunner.run(TestRunner.java:581)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
-at org.testng.TestNG.runSuites(TestNG.java:1066)
-at org.testng.TestNG.run(TestNG.java:1034)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method signature="handlingFrameAndClickChatIconTest()[pri:0, instance:com.atmecs.automation.HandlingFramesUsingJavaScriptExecuter.HandlingFramesUsingJS@7c469c48]" started-at="2020-09-20T16:17:36 IST" name="handlingFrameAndClickChatIconTest" finished-at="2020-09-20T16:17:53 IST" duration-ms="17226" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- fillingRequiredFields -->
-      </class> <!-- com.atmecs.automation.HandlingFramesUsingJavaScriptExecuter.FillingFormsOnChatWindow -->
+        </test-method> <!-- handlingFrameAndClickChatIconTest -->
+        <test-method is-config="true" signature="closingDriver()[pri:0, instance:com.atmecs.automation.HandlingFramesUsingJavaScriptExecuter.HandlingFramesUsingJS@7c469c48]" started-at="2020-09-20T16:17:53 IST" name="closingDriver" finished-at="2020-09-20T16:17:54 IST" duration-ms="1110" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closingDriver -->
+      </class> <!-- com.atmecs.automation.HandlingFramesUsingJavaScriptExecuter.HandlingFramesUsingJS -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

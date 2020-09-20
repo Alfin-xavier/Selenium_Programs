@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.atmecs.automation.HandlingFramesUsingJavaScriptExecuter.FillingFormsOnChatWindow">
+      <class name="com.atmecs.automation.HandlingFramesUsingJavaScriptExecuter.HandlingFramesUsingJS">
         <methods>
+          <include name="handlingFrameAndClickChatIconTest"/>
           <include name="settingAndLaunchingDriver"/>
-          <include name="fillingRequiredFields"/>
+          <include name="closingDriver"/>
         </methods>
-      </class> <!-- com.atmecs.automation.HandlingFramesUsingJavaScriptExecuter.FillingFormsOnChatWindow -->
+      </class> <!-- com.atmecs.automation.HandlingFramesUsingJavaScriptExecuter.HandlingFramesUsingJS -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
