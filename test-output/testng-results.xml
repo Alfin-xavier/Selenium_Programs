@@ -1,73 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-09-18T20:03:39 IST" name="Suite" finished-at="2020-09-18T20:03:49 IST" duration-ms="10258">
+  <suite started-at="2020-09-20T11:08:00 IST" name="Default suite" finished-at="2020-09-20T11:08:27 IST" duration-ms="27333">
     <groups>
     </groups>
-    <test started-at="2020-09-18T20:03:39 IST" name="Test" finished-at="2020-09-18T20:03:49 IST" duration-ms="10258">
-      <class name="com.atmecs.automation.Annotations.Assignmant1">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.atmecs.automation.Annotations.Assignmant1@1e802ef9]" started-at="2020-09-18T20:03:39 IST" name="beforeSuite" finished-at="2020-09-18T20:03:39 IST" duration-ms="9" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="message()[pri:0, instance:com.atmecs.automation.Annotations.Assignmant1@1e802ef9]" started-at="2020-09-18T20:03:39 IST" name="message" finished-at="2020-09-18T20:03:39 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- message -->
-        <test-method is-config="true" signature="greeting()[pri:0, instance:com.atmecs.automation.Annotations.Assignmant1@1e802ef9]" started-at="2020-09-18T20:03:39 IST" name="greeting" finished-at="2020-09-18T20:03:39 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- greeting -->
-        <test-method is-config="true" signature="infoBeforeLaunching()[pri:0, instance:com.atmecs.automation.Annotations.Assignmant1@1e802ef9]" started-at="2020-09-18T20:03:39 IST" name="infoBeforeLaunching" finished-at="2020-09-18T20:03:39 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- infoBeforeLaunching -->
-        <test-method signature="settingAndLaunchingDriver()[pri:0, instance:com.atmecs.automation.Annotations.Assignmant1@1e802ef9]" started-at="2020-09-18T20:03:39 IST" name="settingAndLaunchingDriver" finished-at="2020-09-18T20:03:45 IST" duration-ms="5882" status="PASS">
+    <test started-at="2020-09-20T11:08:00 IST" name="Default test" finished-at="2020-09-20T11:08:27 IST" duration-ms="27333">
+      <class name="com.atmecs.automation.HandlingFramesUsingJavaScriptExecuter.HandlingFramesUsingJS">
+        <test-method is-config="true" signature="settingAndLaunchingDriver()[pri:0, instance:com.atmecs.automation.HandlingFramesUsingJavaScriptExecuter.HandlingFramesUsingJS@7c469c48]" started-at="2020-09-20T11:08:00 IST" name="settingAndLaunchingDriver" finished-at="2020-09-20T11:08:10 IST" duration-ms="10123" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- settingAndLaunchingDriver -->
-        <test-method is-config="true" signature="infoAfterLaunching()[pri:0, instance:com.atmecs.automation.Annotations.Assignmant1@1e802ef9]" started-at="2020-09-18T20:03:45 IST" name="infoAfterLaunching" finished-at="2020-09-18T20:03:45 IST" duration-ms="1" status="PASS">
+        <test-method signature="handlingFrameAndClickChatIconTest()[pri:0, instance:com.atmecs.automation.HandlingFramesUsingJavaScriptExecuter.HandlingFramesUsingJS@7c469c48]" started-at="2020-09-20T11:08:10 IST" name="handlingFrameAndClickChatIconTest" finished-at="2020-09-20T11:08:26 IST" duration-ms="15613" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- infoAfterLaunching -->
-        <test-method signature="gettingAndValidatingUrl()[pri:1, instance:com.atmecs.automation.Annotations.Assignmant1@1e802ef9]" started-at="2020-09-18T20:03:45 IST" name="gettingAndValidatingUrl" finished-at="2020-09-18T20:03:45 IST" duration-ms="11" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- gettingAndValidatingUrl -->
-        <test-method is-config="true" signature="infoBeforeLaunching()[pri:0, instance:com.atmecs.automation.Annotations.Assignmant1@1e802ef9]" started-at="2020-09-18T20:03:45 IST" name="infoBeforeLaunching" finished-at="2020-09-18T20:03:45 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- infoBeforeLaunching -->
-        <test-method is-config="true" signature="infoAfterLaunching()[pri:0, instance:com.atmecs.automation.Annotations.Assignmant1@1e802ef9]" started-at="2020-09-18T20:03:45 IST" name="infoAfterLaunching" finished-at="2020-09-18T20:03:45 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- infoAfterLaunching -->
-        <test-method signature="gettingPageTitle()[pri:2, instance:com.atmecs.automation.Annotations.Assignmant1@1e802ef9]" started-at="2020-09-18T20:03:45 IST" name="gettingPageTitle" finished-at="2020-09-18T20:03:45 IST" duration-ms="7" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- gettingPageTitle -->
-        <test-method is-config="true" signature="infoBeforeLaunching()[pri:0, instance:com.atmecs.automation.Annotations.Assignmant1@1e802ef9]" started-at="2020-09-18T20:03:45 IST" name="infoBeforeLaunching" finished-at="2020-09-18T20:03:45 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- infoBeforeLaunching -->
-        <test-method is-config="true" signature="infoAfterLaunching()[pri:0, instance:com.atmecs.automation.Annotations.Assignmant1@1e802ef9]" started-at="2020-09-18T20:03:45 IST" name="infoAfterLaunching" finished-at="2020-09-18T20:03:45 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- infoAfterLaunching -->
-        <test-method is-config="true" signature="greeting1()[pri:0, instance:com.atmecs.automation.Annotations.Assignmant1@1e802ef9]" started-at="2020-09-18T20:03:45 IST" name="greeting1" finished-at="2020-09-18T20:03:45 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- greeting1 -->
-        <test-method is-config="true" signature="closingDriver()[pri:0, instance:com.atmecs.automation.Annotations.Assignmant1@1e802ef9]" started-at="2020-09-18T20:03:45 IST" name="closingDriver" description="Going to close the browser" finished-at="2020-09-18T20:03:49 IST" duration-ms="4317" status="PASS">
+        </test-method> <!-- handlingFrameAndClickChatIconTest -->
+        <test-method is-config="true" signature="closingDriver()[pri:0, instance:com.atmecs.automation.HandlingFramesUsingJavaScriptExecuter.HandlingFramesUsingJS@7c469c48]" started-at="2020-09-20T11:08:26 IST" name="closingDriver" finished-at="2020-09-20T11:08:27 IST" duration-ms="1497" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closingDriver -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.atmecs.automation.Annotations.Assignmant1@1e802ef9]" started-at="2020-09-18T20:03:49 IST" name="afterSuite" finished-at="2020-09-18T20:03:49 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterSuite -->
-      </class> <!-- com.atmecs.automation.Annotations.Assignmant1 -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+      </class> <!-- com.atmecs.automation.HandlingFramesUsingJavaScriptExecuter.HandlingFramesUsingJS -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

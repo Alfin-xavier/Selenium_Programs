@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.atmecs.automation.HandlingFramesUsingJavaScriptExecuter.FillingRequiredFields">
+      <class name="com.atmecs.automation.AutomatingTravelSite.SearchingFlights">
         <methods>
-          <include name="closingDriver"/>
-          <include name="fillingRequiredFieldsTest"/>
           <include name="settingAndLaunchingDriver"/>
-          <include name="framehandling"/>
+          <include name="closingDriver"/>
+          <include name="twoWayTripSelectionTest"/>
         </methods>
-      </class> <!-- com.atmecs.automation.HandlingFramesUsingJavaScriptExecuter.FillingRequiredFields -->
+      </class> <!-- com.atmecs.automation.AutomatingTravelSite.SearchingFlights -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

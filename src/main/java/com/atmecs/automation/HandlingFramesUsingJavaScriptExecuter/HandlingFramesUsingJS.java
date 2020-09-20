@@ -34,7 +34,7 @@ public class HandlingFramesUsingJS
 		
 	}
 	
-	@Test(priority=1)
+	@Test
 	public void handlingFrameAndClickChatIconTest() throws InterruptedException, IOException
 	{
 		Wait<WebDriver> wait=new WebDriverWait(driver,30);
@@ -47,15 +47,11 @@ public class HandlingFramesUsingJS
 		 js = (JavascriptExecutor) driver;
 		 js.executeScript("window.scrollBy(0,1000)");
 		
+		 Thread.sleep(2000);
+		 
 		 WebElement chaticon = driver.findElement(By.xpath(properties.getProperty("chaticon")));
 		
 		js.executeScript("arguments[0].click();", chaticon);
-		
-	}
-	
-	@Test(priority=2)
-	public void fillingRequiredFieldsTest() throws InterruptedException
-	{
 		
 		WebElement username = driver.findElement(By.id(properties.getProperty("username")));
 		username.sendKeys(properties.getProperty("name"));

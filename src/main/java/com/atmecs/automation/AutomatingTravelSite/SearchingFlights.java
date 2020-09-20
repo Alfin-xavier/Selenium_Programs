@@ -29,7 +29,7 @@ public class SearchingFlights
 				properties.load(file);
 		driver.get(properties.getProperty("url"));
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(150, TimeUnit.SECONDS);
 	}
 	
 	 @Test(priority=1)
