@@ -3,13 +3,34 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.atmecs.automation.AutomatingTravelSite.SearchingFlights">
+      <class name="com.atmecs.automation.DemoBlaze.SelectAndAddProductToCart">
+        <methods>
+          <include name="closingDriver"/>
+          <include name="selectAndAddToCartProduct"/>
+          <include name="settingAndLaunchingDriver"/>
+        </methods>
+      </class> <!-- com.atmecs.automation.DemoBlaze.SelectAndAddProductToCart -->
+      <class name="com.atmecs.automation.DemoBlaze.LogInTest">
         <methods>
           <include name="settingAndLaunchingDriver"/>
+          <include name="logInTest"/>
           <include name="closingDriver"/>
-          <include name="twoWayTripSelectionTest"/>
         </methods>
-      </class> <!-- com.atmecs.automation.AutomatingTravelSite.SearchingFlights -->
+      </class> <!-- com.atmecs.automation.DemoBlaze.LogInTest -->
+      <class name="com.atmecs.automation.DemoBlaze.ContactUs">
+        <methods>
+          <include name="contactUsScript"/>
+          <include name="settingAndLaunchingDriver"/>
+          <include name="closingDriver"/>
+        </methods>
+      </class> <!-- com.atmecs.automation.DemoBlaze.ContactUs -->
+      <class name="com.atmecs.automation.DemoBlaze.SignInTest">
+        <methods>
+          <include name="closingDriver"/>
+          <include name="signUpTest"/>
+          <include name="settingAndLaunchingDriver"/>
+        </methods>
+      </class> <!-- com.atmecs.automation.DemoBlaze.SignInTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

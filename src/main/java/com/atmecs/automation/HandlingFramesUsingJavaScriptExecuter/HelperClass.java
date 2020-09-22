@@ -22,4 +22,8 @@ public class HelperClass
 		Select selectValue = new Select(driver.findElement(By.xpath(xpath)));
 		selectValue.selectByValue(values);
 	}
+	public void button(String xpath)
+	{
+		driver.findElement(By.xpath(xpath));
+	}
 }

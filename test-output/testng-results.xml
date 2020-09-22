@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-09-20T16:17:22 IST" name="Default suite" finished-at="2020-09-20T16:17:54 IST" duration-ms="31430">
+  <suite started-at="2020-09-22T09:13:21 IST" name="Default suite" finished-at="2020-09-22T09:13:39 IST" duration-ms="18212">
     <groups>
     </groups>
-    <test started-at="2020-09-20T16:17:22 IST" name="Default test" finished-at="2020-09-20T16:17:54 IST" duration-ms="31430">
+    <test started-at="2020-09-22T09:13:21 IST" name="Default test" finished-at="2020-09-22T09:13:39 IST" duration-ms="18212">
       <class name="com.atmecs.automation.HandlingFramesUsingJavaScriptExecuter.HandlingFramesUsingJS">
-        <test-method is-config="true" signature="settingAndLaunchingDriver()[pri:0, instance:com.atmecs.automation.HandlingFramesUsingJavaScriptExecuter.HandlingFramesUsingJS@7c469c48]" started-at="2020-09-20T16:17:22 IST" name="settingAndLaunchingDriver" finished-at="2020-09-20T16:17:36 IST" duration-ms="13034" status="PASS">
+        <test-method is-config="true" signature="settingAndLaunchingDriver()[pri:0, instance:com.atmecs.automation.HandlingFramesUsingJavaScriptExecuter.HandlingFramesUsingJS@25d250c6]" started-at="2020-09-22T09:13:21 IST" name="settingAndLaunchingDriver" finished-at="2020-09-22T09:13:30 IST" duration-ms="8476" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- settingAndLaunchingDriver -->
-        <test-method signature="handlingFrameAndClickChatIconTest()[pri:0, instance:com.atmecs.automation.HandlingFramesUsingJavaScriptExecuter.HandlingFramesUsingJS@7c469c48]" started-at="2020-09-20T16:17:36 IST" name="handlingFrameAndClickChatIconTest" finished-at="2020-09-20T16:17:53 IST" duration-ms="17226" status="PASS">
+        <test-method signature="handlingFrameAndClickChatIconTest()[pri:0, instance:com.atmecs.automation.HandlingFramesUsingJavaScriptExecuter.HandlingFramesUsingJS@25d250c6]" started-at="2020-09-22T09:13:30 IST" name="handlingFrameAndClickChatIconTest" finished-at="2020-09-22T09:13:39 IST" duration-ms="9401" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- handlingFrameAndClickChatIconTest -->
-        <test-method is-config="true" signature="closingDriver()[pri:0, instance:com.atmecs.automation.HandlingFramesUsingJavaScriptExecuter.HandlingFramesUsingJS@7c469c48]" started-at="2020-09-20T16:17:53 IST" name="closingDriver" finished-at="2020-09-20T16:17:54 IST" duration-ms="1110" status="PASS">
+        <test-method is-config="true" signature="closingDriver()[pri:0, instance:com.atmecs.automation.HandlingFramesUsingJavaScriptExecuter.HandlingFramesUsingJS@25d250c6]" started-at="2020-09-22T09:13:39 IST" name="closingDriver" finished-at="2020-09-22T09:13:39 IST" duration-ms="292" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closingDriver -->
